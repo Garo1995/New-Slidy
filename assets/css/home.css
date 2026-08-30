@@ -1677,7 +1677,11 @@ html[data-theme="dark"] .section-decor-two{
 
 
 
-
+@media (max-width: 1599px){
+  .hero-section {
+    min-height: 1090px;
+  }
+}
 
 
 @media (max-width: 1200px) {

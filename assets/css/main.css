@@ -756,9 +756,7 @@ strong {
   .hero-bg {
     height: auto;
   }
-  .hero-section {
-    min-height: 1090px;
-  }
+
 }
 
 @media (max-width: 1220px){
