@@ -756,6 +756,15 @@ strong {
   .hero-bg {
     height: auto;
   }
+  .hero-section {
+    min-height: 1090px;
+  }
+}
+
+@media (max-width: 1220px){
+  .hero-bg {
+    height: 100%;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -782,13 +791,21 @@ strong {
     margin-top: 12px;
   }
   .hero-bg {
-    height: 90%;
+    height: 100%;
   }
-  .hero-bg img {
-    object-fit: unset;
+  .hero-section:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 150px;
+    background-image: url("../images/icon-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 92px;
+    height: 232px;
   }
-  .hero-bg img {
-    object-position: bottom;
+  .hero-ellipse {
+    bottom: -20px;
   }
   .img-desktop{
     display: none;
@@ -802,13 +819,22 @@ strong {
 
 
   .hero-titles {
-    max-width: 332px;
+    max-width: 340px;
   }
+
+
   .hero-ellipse {
-    display: none;
+    bottom: 100px;
   }
   .hero-titles p {
     max-width: 300px;
+  }
+  .hero-bg {
+    height: 956px;
+  }
+
+  .hero-section:before {
+    top: 92px;
   }
 }
 

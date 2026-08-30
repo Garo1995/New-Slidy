@@ -114,7 +114,7 @@
 .hero-section {
   position: relative;
   z-index: 2;
-  min-height: 1103px;
+  min-height: 1173px;
   padding: 114px 0 0;
 }
 
@@ -327,7 +327,9 @@ display: block;
   height: 6px;
   border-radius: 50%;
 }
-
+.hero-task-other{
+  display: none;
+}
 
 
 .hero-task-name:nth-child(1){
@@ -1678,10 +1680,6 @@ html[data-theme="dark"] .section-decor-two{
 
 
 
-
-
-
-
 @media (max-width: 1200px) {
   .reviews-item {
     max-width: 49%;
@@ -1716,7 +1714,6 @@ html[data-theme="dark"] .section-decor-two{
     top: 115px;
     right: -27px;
   }
-
 
   .item-one {
     width: 314px;
@@ -1838,9 +1835,6 @@ html[data-theme="dark"] .section-decor-two{
   .hero-section {
     min-height: 925px;
     padding-bottom: 24px;
-  }
-  .reviews-item {
-    max-width: 47%;
   }
 
   .hero-task-cnt {
@@ -1993,12 +1987,12 @@ html[data-theme="dark"] .section-decor-two{
     margin-bottom: 0;
     border-radius: 10px;
     height: 381px;
+    max-width: 100%;
+
   }
 
 
-  .btn-register .desktop-block {
-    display: none;
-  }
+
 }
 
 
@@ -2303,7 +2297,9 @@ html[data-theme="dark"] .section-decor-two{
     font-size: 7.01px;
     line-height: 9.18px;
   }
-
+  .hero-task-cols {
+    min-height: 400px;
+  }
 
 
 
@@ -2414,20 +2410,6 @@ html[data-theme="dark"] .section-decor-two{
     z-index: 1;
   }
 
-  .btn-register {
-    height: 40px;
-    max-width: 40px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 40px;
-    padding: 0;
-  }
-  .btn-register i {
-    flex: 0 0 15px;
-    font-size: 13px;
-  }
 
   .possibilit-card {
     max-width: 400px;
@@ -2505,7 +2487,9 @@ html[data-theme="dark"] .section-decor-two{
     width: 92px;
     height: 92px;
   }
-
+  .hero-section {
+    min-height: 1130px;
+  }
 
   .possibilit-card {
     gap: 16px;
@@ -2739,7 +2723,10 @@ html[data-theme="dark"] .section-decor-two{
     padding: 14px;
   }
 
-
+  .hero-task-other{
+    display: flex;
+    color: var(--accent-color);
+  }
 
   .for-content {
     top: 54px;
@@ -2748,7 +2735,10 @@ html[data-theme="dark"] .section-decor-two{
   }
   .hero-task-cols {
     max-width: 460px;
+    min-height: 380px;
+
   }
+
   .for-content h2 {
     font-size: 16.72px;
     margin: 4px 0;
@@ -2756,6 +2746,11 @@ html[data-theme="dark"] .section-decor-two{
   .for-content p {
     font-size: 6.01px;
     line-height: 7.18px;
+  }
+  .hero-task-name {
+    gap: 8px;
+    padding: 8px 11px;
+    font-size: 15px;
   }
 }
 
@@ -2780,4 +2775,6 @@ html[data-theme="dark"] .section-decor-two{
     font-size: 5.01px;
     line-height: 7.18px;
   }
+
+
 }
