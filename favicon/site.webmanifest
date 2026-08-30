@@ -1,0 +1,28 @@
+{
+  "name": "Slidy AI",
+  "short_name": "Slidy AI",
+  "icons": [
+    {
+      "src": "/favicon/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "ru.oooii.slidy",
+      "url": "https://play.google.com/store/apps/details?id=ru.oooii.slidy&utm_source=slidy_br&utm_medium=manifest&utm_campaign=android_app_install"
+    }
+  ]
+}
