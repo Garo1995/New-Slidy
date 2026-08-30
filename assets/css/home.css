@@ -2316,26 +2316,7 @@ html[data-theme="dark"] .section-decor-two{
   }
 
 
-  .for-content {
-    top: 34px;
-    left: 72px;
-    max-width: 100px;
-  }
-  .content-ai {
-    padding: 2.17px 4.51px;
-    font-size: 4.16px;
-    line-height: 4.51px;
-  }
-  .for-content h2 {
-    font-size: 14.72px;
-    line-height: 15.72px;
 
-    margin: 4px 0;
-  }
-  .for-content p {
-    font-size: 5.01px;
-    line-height: 7.18px;
-  }
   .side-nav {
     display: none;
   }
@@ -2485,10 +2466,14 @@ html[data-theme="dark"] .section-decor-two{
     top: 0;
     right: 0;
     z-index: 2;
-    background-image: url("../images/task-menu-blur.png");
+    background-image: url("../images/task-menu-blur-lig.png");
     width: 47px;
     height: 100%;
     border-radius: 0 24px 24px 0;
+  }
+  html[data-theme="dark"] .task-menu:after{
+    background-image: url("../images/task-menu-blur.png");
+
   }
   .hero-task-cnt {
     padding: 7px;
@@ -2528,7 +2513,9 @@ html[data-theme="dark"] .section-decor-two{
     gap: 16px;
   }
 
-
+  #efficiency .desktop-block {
+    display: block;
+  }
 
   .img-switch {
     width: 53px;
@@ -2756,8 +2743,43 @@ html[data-theme="dark"] .section-decor-two{
 
 
 
-
-
-
+  .for-content {
+    top: 54px;
+    left: 92px;
+    max-width: 120px;
+  }
+  .hero-task-cols {
+    max-width: 460px;
+  }
+  .for-content h2 {
+    font-size: 16.72px;
+    margin: 4px 0;
+  }
+  .for-content p {
+    font-size: 6.01px;
+    line-height: 7.18px;
+  }
 }
 
+@media (max-width: 465px){
+  .for-content {
+    top: 34px;
+    left: 72px;
+    max-width: 100px;
+  }
+  .content-ai {
+    padding: 2.17px 4.51px;
+    font-size: 4.16px;
+    line-height: 4.51px;
+  }
+  .for-content h2 {
+    font-size: 14.72px;
+    line-height: 15.72px;
+
+    margin: 4px 0;
+  }
+  .for-content p {
+    font-size: 5.01px;
+    line-height: 7.18px;
+  }
+}
