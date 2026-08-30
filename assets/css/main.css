@@ -667,7 +667,9 @@ strong {
   .desktop-block{
     display: unset;
   }
-
+  .hero-bg {
+    height: 87%;
+  }
 
 }
 
@@ -749,6 +751,12 @@ strong {
 }
 
 
+
+@media (max-width: 1599px) {
+  .hero-bg {
+    height: auto;
+  }
+}
 
 @media (max-width: 1199px) {
 

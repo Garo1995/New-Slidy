@@ -2365,9 +2365,7 @@ html[data-theme="dark"] .section-decor-two{
     visibility: hidden;
     pointer-events: none;
   }
-  .hero-bg {
-    height: 87%;
-  }
+
   .possibilit-form textarea {
     min-height: 88px;
   }
