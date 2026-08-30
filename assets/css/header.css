@@ -221,6 +221,9 @@ header.moved {
     display: none;
 }
 
+
+
+
 @media (max-width: 992px) {
     .language-sub-items {
         padding: 0 10px 0 0;

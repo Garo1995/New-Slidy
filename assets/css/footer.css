@@ -186,6 +186,14 @@ footer .loss-quality-elips img {
     left: 0;
 }
 
+
+
+footer .language-select-wrapper{
+    display: none;
+}
+
+
+
 @media (max-width: 1400px) {
     .footer-select-wrapper .language-sub-block {
         transform: translateX(-21%);
@@ -249,7 +257,7 @@ footer .loss-quality-elips img {
     .footer-logo-wrapper {
         max-width: 100%;
     }
-  
+
 }
 
 @media (max-width: 576px) {
