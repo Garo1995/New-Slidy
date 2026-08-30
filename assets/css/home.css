@@ -2440,6 +2440,9 @@ html[data-theme="dark"] .section-decor-two{
     display: none;
     opacity: 0;
   }
+  .task-menu ul::-webkit-scrollbar {
+    display: none;
+  }
   .task-menu {
     overflow: hidden;
     position: relative;
@@ -2459,6 +2462,29 @@ html[data-theme="dark"] .section-decor-two{
     background-image: url("../images/task-menu-blur.png");
 
   }
+  .task-menu:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-image: url("../images/task-menu-blur-lig.png");
+    width: 47px;
+    height: 100%;
+    border-radius: 24px;
+    transform: rotate(180deg);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  html[data-theme="dark"] .task-menu:before{
+    background-image: url("../images/task-menu-blur.png");
+
+  }
+
+  .task-menu.has-scroll-left:before {
+    opacity: 1;
+  }
+
   .hero-task-cnt {
     padding: 7px;
   }

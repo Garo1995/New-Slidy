@@ -828,6 +828,55 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+(function () {
+  function updateScrollFades(menu) {
+    const ul = menu.querySelector('ul');
+    if (!ul) return;
+
+    const maxScroll = ul.scrollWidth - ul.clientWidth;
+
+    menu.classList.toggle('has-scroll-left', ul.scrollLeft > 2);
+    menu.classList.toggle('has-scroll-right', ul.scrollLeft < maxScroll - 2);
+  }
+
+  function initMenu(menu) {
+    // чтобы не навешивать обработчики повторно на один и тот же блок
+    if (menu.dataset.scrollFadeInit) return;
+    menu.dataset.scrollFadeInit = 'true';
+
+    const ul = menu.querySelector('ul');
+    if (!ul) return;
+
+    updateScrollFades(menu);
+    ul.addEventListener('scroll', () => updateScrollFades(menu));
+    window.addEventListener('resize', () => updateScrollFades(menu));
+  }
+
+  function initAllMenus() {
+    document.querySelectorAll('.task-menu').forEach(initMenu);
+  }
+
+  // блок уже есть на странице при загрузке
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAllMenus);
+  } else {
+    initAllMenus();
+  }
+
+  // на случай если .task-menu появится динамически позже
+  const observer = new MutationObserver(() => {
+    initAllMenus();
+  });
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true,
+  });
+})();
+
+
+
+
 
 
 
