@@ -182,8 +182,16 @@ html[data-theme="dark"] .product-log{
     line-height: 40px;
     max-width: 418px;
     width: 100%;
+    color: #FAFDFF;
 }
+.find-present .section-tag span {
+    color: #FAFDFF;
 
+}
+.find-present .section-sub-title {
+    color: #B7B9BB;
+
+}
 .find-present .section-sub-title {
     max-width: 660px;
     width: 100%;
@@ -647,6 +655,9 @@ html[data-theme="dark"] .product-log{
     align-items: center;
     justify-content: center;
     transition: 0.3s;
+}
+.open-estate-filter svg path{
+    fill: var(--main-container6);
 }
 .body-fon {
     overflow: hidden;
