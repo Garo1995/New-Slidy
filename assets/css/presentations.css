@@ -1260,5 +1260,7 @@
     .temp-come-photo {
         height: 240px;
     }
-
+    .marketing-btn {
+        width: 100%;
+    }
 }

@@ -4994,6 +4994,9 @@ html[data-theme="dark"] .pointsDark-title{
     min-height: 332px;
 
   }
+  .catalog-btn {
+    height: 44px;
+  }
 }
 
 
