@@ -142,6 +142,7 @@
 }
 .share-social svg path{
     transition: 0.3s;
+    fill: var(--bg-color2);
 }
 
 
