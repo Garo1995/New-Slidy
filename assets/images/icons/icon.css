@@ -188,3 +188,15 @@
     mask-image: url(star-rating.svg);
     -webkit-mask-image: url(star-rating.svg);
 }
+
+.icon-zoom {
+    content: url(icon-zoom.svg);
+}
+
+.icon-err {
+    content: url(icon-error.svg);
+}
+
+.icon-material {
+    content: url(material-symbols.svg);
+}

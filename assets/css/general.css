@@ -1886,6 +1886,10 @@ html[data-theme="dark"] .pointsDark-title{
 .catalog-filters-main{
   max-width: 284px;
   width: 100%;
+  display: none;
+}
+.touchstart-open{
+  display: block;
 }
 .catalog-filters-wrapper {
   max-width: 284px;
@@ -1945,7 +1949,6 @@ html[data-theme="dark"] .pointsDark-title{
 
 
 .catalog-items-wrapper {
-  max-width: 866px;
   width: 100%;
 }
 
@@ -3862,12 +3865,11 @@ html[data-theme="dark"] .pointsDark-title{
   .linking-card .linking-card-bg img{
     height: 550px;
   }
+
 }
 
 @media (max-width: 1099px) {
-  .catalog-items-wrapper {
-    max-width: 718px;
-  }
+
   .catalog-filters-main {
     max-width: 260px;
   }
@@ -4382,10 +4384,7 @@ html[data-theme="dark"] .pointsDark-title{
     width: 16px;
     height: 16px;
   }
-  .section-big-title {
-    font-size: 30px;
-    line-height: 34px;
-  }
+
   .linking-card-names ul li:nth-child(4){
     order: 1;
   }
@@ -4508,20 +4507,7 @@ html[data-theme="dark"] .pointsDark-title{
     margin-top: 28px;
   }
 
-  .bread-crumbs ul {
-    gap: 6px;
-  }
-  .bread-crumbs ul li a {
-    font-size: 12px;
-    line-height: 14px;
-  }
-  .payment-main {
-    padding-top: 82px;
-  }
-  .bread-crumbs ul li span {
-    font-size: 12px;
-    line-height: 14px;
-  }
+
   .linking-card .section-big-title i {
     width: 53px;
     height: auto;

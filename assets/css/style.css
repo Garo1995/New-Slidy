@@ -1,9 +1,10 @@
 @import "../font/fonts.css";
+@import "../images/icons/icon.css";
 @import "normalize.css";
 @import "header.css";
 @import "footer.css";
 @import "main.css";
-@import "../images/icons/icon.css";
 @import "home.css";
 @import "catalog-presnt.css";
 @import "general.css";
+@import "presentations.css";

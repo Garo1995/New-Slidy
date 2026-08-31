@@ -195,12 +195,15 @@ $('.touchstart').on('touchend', function () {
         $('body').removeClass('body-fon modal-open');
         $('.modal-overlay').removeClass('active');
         $('.select-property').removeClass('select-property-open');
+        $('.open-estate-filter').removeClass('active');
     }
 });
 
 
 $('.open-estate-filter').on('click', function () {
-    $('.catalog-filters-main').addClass('touchstart-open');
+    $(this).toggleClass('active');
+    $('.catalog-filters-main').toggleClass('touchstart-open');
     $('body').addClass('body-fon');
+
 })
 

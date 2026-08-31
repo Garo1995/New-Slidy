@@ -139,3 +139,138 @@ const reviewsSwiper = new Swiper(".reviews-swiper", {
   },
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+let sampleSmSwiper = new Swiper(".sample-sm-slid", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+  pagination: {
+    el: ".sample-pagination",
+    type: 'fraction',
+  },
+  navigation: {
+    nextEl: '.sample-button-next',
+    prevEl: '.sample-button-prev',
+  },
+  breakpoints: {
+    '767': {
+      spaceBetween: 10,
+      slidesPerView: 4,
+    },
+    '570': {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      loop: true
+    },
+    '320': {
+      slidesPerView: 2.8,
+      spaceBetween: 10,
+      loop: true
+    },
+  },
+});
+let sampleBigSwiper = new Swiper(".sample-big-slid", {
+  spaceBetween: 10,
+  pagination: {
+    el: ".sample-pagination",
+    type: 'fraction',
+  },
+  effect: "fade",
+
+  thumbs: {
+    swiper: sampleSmSwiper,
+  },
+});
+
+
+
+
+
+
+
+
+
+
+const tempSwiper = new Swiper(".temp-come-slide", {
+  spaceBetween: 10,
+  slidesPerView:4,
+  autoHeight: true,
+  pagination: {
+    el: ".temp-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    1199: {
+      slidesPerView: 4,
+    },
+    800: {
+      slidesPerView: 3,
+      loop: true,
+    },
+    768: {
+      slidesPerView: 2,
+      loop: true,
+    },
+    590: {
+      slidesPerView: 2,
+      loop: true,
+    },
+    320: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      loop: true,
+
+    },
+  },
+});
+
+
+
+
+
+
+
+
+
+
+
+const moreSwiper = new Swiper('.more-market-slide', {
+  spaceBetween: 12,
+  slidesPerView: 3,
+  loop: true,
+  pagination: {
+    el: ".more-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.more-button-next',
+    prevEl: '.more-button-prev',
+  },
+  breakpoints: {
+
+    1020: {
+      slidesPerView: 3,
+
+    },
+    767: {
+      slidesPerView: 2,
+
+    },
+    0: {
+      slidesPerView: 1,
+
+    },
+  },
+});

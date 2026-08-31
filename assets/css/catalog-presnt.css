@@ -220,13 +220,11 @@ html[data-theme="dark"] .product-log{
 }
 .find-present-box .possibilit-box {
     margin: 28px auto 0;
+    border: 1px solid var(--border);
 }
 
 
 
-.padding-blocs{
-    padding: 70px 0;
-}
 
 .popular-topics{
     gap: 10px;
@@ -265,82 +263,8 @@ html[data-theme="dark"] .product-log{
 
 }
 
-.background-blue{
-    background: #5489F01A;
-    border: 1px solid #5489F01A;
-}
-
-.background-blue i{
-    background: #5489F0;
-}
-
-.background-green{
-    background: #1AA47C1A;
-    border: 1px solid #1AA47C1A;
-}
-
-.background-green i{
-    background: #1AA47C;
-}
 
 
-.background-violet{
-    background: #8A6BEC1A;
-    border: 1px solid #8A6BEC1A;
-}
-
-.background-violet i{
-    background: #8A6BEC;
-}
-
-.background-pinky{
-    background: #EA4C6D1A;
-    border: 1px solid #EA4C6D1A;
-}
-
-.background-pinky i{
-    background: #EA4C6D;
-}
-
-
-
-.background-orange{
-    background: #FC7D281A;
-    border: 1px solid #FC7D281A;
-}
-
-.background-orange i{
-    background: #FC7D28;
-}
-
-
-.background-lime{
-    background: #72D3361A;
-    border: 1px solid #72D3361A;
-}
-
-.background-lime i{
-    background: #72D336;
-}
-
-
-.background-LBlue{
-    background: #28BCFC1A;
-    border: 1px solid #28BCFC1A;
-}
-
-.background-LBlue i{
-    background: #28BCFC;
-}
-
-
-
-.title-blocs{
-    margin-bottom: 32px;
-}
-.title-blocs p{
-    margin-top: 12px;
-}
 
 
 .interest-wrap{
@@ -566,23 +490,7 @@ html[data-theme="dark"] .product-log{
     gap: 16px;
     color: var(--text-color);
 }
-.use-circle{
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 24px;
-    height: 24px;
-    width: 100%;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 14px;
-    text-align: center;
-    color: var(--accent-color);
-    background: var(--primary-cont);
-    backdrop-filter: blur(8px);
 
-}
 .benefits-cnt{
     margin-top: 10px;
 }
@@ -630,7 +538,7 @@ html[data-theme="dark"] .product-log{
     background: #5489F01A;
     border: 1px solid  #5489F01A;
 }
-.benefits-item i{
+.benefits-item .icon{
     background: var(--accent-color);
     font-size: 20px;
 }
@@ -646,7 +554,6 @@ html[data-theme="dark"] .product-log{
     gap: 12px;
 }
 .open-estate-filter{
-    background: var(--bg-color2);
     min-width: 44px;
     width: 44px;
     height: 44px;
@@ -655,23 +562,23 @@ html[data-theme="dark"] .product-log{
     align-items: center;
     justify-content: center;
     transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    background: unset;
+}
+.open-estate-filter.active{
+    background: var(--bg-color2);
+    border: 1px solid var(--bg-color2);
+
 }
 .open-estate-filter svg path{
+    fill: var(--bg-color2);
+}
+
+.open-estate-filter.active svg path{
     fill: var(--main-container6);
 }
-.body-fon {
-    overflow: hidden;
-}
-.body-fon:before {
-    content: "";
-    position: fixed;
-    background: #00000066;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9991;
-}
+
 
 
 .filter-category {
@@ -922,9 +829,7 @@ html[data-theme="dark"] .filter-category:after{
 }
 
 @media (max-width: 1199px){
-    .padding-blocs {
-        padding: 60px 0;
-    }
+
     .study-sec {
         padding-bottom: 160px;
     }
@@ -990,9 +895,7 @@ html[data-theme="dark"] .filter-category:after{
     .popular-box {
         width: calc(33.333333% - 8px);
     }
-    .title-blocs {
-        margin-bottom: 24px;
-    }
+
     .interest-card {
         width: calc(33.333333% - 8px);
     }
@@ -1014,6 +917,21 @@ html[data-theme="dark"] .filter-category:after{
     .catalog-main-section {
         padding: 80px 0 0 0;
     }
+    .body-fon {
+        overflow: hidden;
+    }
+    .body-fon:before {
+        content: "";
+        position: fixed;
+        background: #00000066;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9991;
+    }
+
+
 }
 
 
@@ -1021,14 +939,7 @@ html[data-theme="dark"] .filter-category:after{
     .popular-box {
         width: calc(50% - 8px);
     }
-    .title-blocs h3{
-        text-align: left;
 
-    }
-    .title-blocs{
-        max-width: 450px;
-        width: 100%;
-    }
     .interest-card {
         width: calc(50% - 8px);
     }
@@ -1134,9 +1045,7 @@ html[data-theme="dark"] .filter-category:after{
     .find-present {
         margin-bottom: 175px;
     }
-    .title-blocs p {
-        margin-top: 8px;
-    }
+
     .popular-box {
         width: 100%;
     }
@@ -1144,9 +1053,7 @@ html[data-theme="dark"] .filter-category:after{
         max-width: 44px;
         height: 44px;
     }
-    .padding-blocs {
-        padding: 50px 0;
-    }
+
     .interest-card {
         width: 100%;
     }
