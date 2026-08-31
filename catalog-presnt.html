@@ -1,0 +1,2049 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Slidy-AI-Redesign</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+          rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="./favicon/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="./assets/css/style.css"/>
+
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header-body G-align-center">
+                <div class="header-tools G-align-center">
+                    <a href="index.html" class="header-logo G-flex">
+                        <img
+                                loading="eager"
+                                src="assets/images/logo.svg"
+                                data-light="assets/images/logo.svg"
+                                data-dark="assets/images/logo-dark.svg"
+                                alt="Slidy"
+                                fetchpriority="high"
+                                width="96"
+                                height="29"
+                                style="width: auto; height: auto"
+                        />
+                    </a>
+
+                </div>
+
+                <div class="header-actions G-align-center">
+                    <div class="language-select-wrapper header-select-wrapper">
+                        <div class="language-select-header G-align-center">
+                            <div class="l-select-flag G-flex">
+                                <img
+                                        loading="lazy"
+                                        src="assets/images/flag1.svg"
+                                        alt=""
+                                        width="28"
+                                        height="20"
+                                />
+                            </div>
+                            <p>Русский</p>
+                            <i class="icon icon-arrow-down"></i>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn-login">
+                        <span class="desktop-block">Вход</span>
+                    </a>
+                    <a href="#" class="btn-register">
+                        <span class="desktop-block">Попробовать <span>бесплатно</span></span>
+                        <i class="icon icon-arrow mobile-block"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+
+        <section class="catalog-main-section">
+            <div class="container">
+                <div class="bread-crumbs ">
+                    <ul>
+                        <li>
+                            <a href="index.html">Нейросеть для презентаций</a>
+                        </li>
+                        <li>
+                            <span>/</span>
+                        </li>
+                        <li>
+                            <a href="index.html">Каталог</a>
+                        </li>
+                        <li>
+                            <span>/</span>
+                        </li>
+                        <li>
+                            <a class="active" href="#">Стартапы</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="fisrt-section-titles ">
+                    <h1>
+                        Каталог готовых презентаций
+                    </h1>
+                    <p>
+                        Текст от вики
+                    </p>
+                </div>
+
+                <div class="catalog-search-block block-cnt G-align-center">
+                    <label>
+                        <input
+                                type="text"
+                                name="search"
+                                placeholder="Поиск по названию, категории..."
+                                autocomplete="off"
+                        />
+                        <i class="icon icon-search"></i>
+                    </label>
+                    <button class="catalog-btn btn-start G-align-center">
+                        <span>Найти</span>
+                    </button>
+                </div>
+
+                <div class="filter-block G-align-center">
+                    <div class="open-estate-filter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M11.9912 2.99914C11.68 3.00478 11.4319 3.26015 11.4365 3.57078V12.9604C10.4031 13.2164 9.62741 14.1477 9.62741 15.256C9.62741 16.3649 10.4031 17.2962 11.4365 17.5515V20.4119C11.4257 21.1753 12.5746 21.1753 12.5639 20.4119V17.5515C13.5967 17.2962 14.3718 16.3649 14.3718 15.256C14.3718 14.1482 13.5967 13.2169 12.5639 12.9604V3.57078C12.5684 3.25283 12.3091 2.99463 11.9912 2.99914ZM5.79003 3.00704C5.47885 3.01267 5.2308 3.26805 5.23531 3.57867V6.43796C4.20198 6.69446 3.42627 7.62632 3.42627 8.73464C3.42627 9.84351 4.20198 10.7748 5.23531 11.0302V20.4198C5.2246 21.1831 6.3735 21.1831 6.36279 20.4198V11.0302C7.39556 10.7748 8.17071 9.84351 8.17071 8.73464C8.17071 7.62689 7.39556 6.69446 6.36279 6.43796V3.57867C6.3673 3.26072 6.10798 3.00253 5.79003 3.00704ZM18.1923 3.0138C17.8811 3.01944 17.6331 3.27481 17.6376 3.58543V6.44585C16.6043 6.70179 15.8286 7.63309 15.8286 8.7414C15.8286 9.85028 16.6043 10.7827 17.6376 11.0381V20.4266C17.6269 21.1899 18.7758 21.1899 18.7651 20.4266V11.0381C19.7978 10.7821 20.573 9.85028 20.573 8.7414C20.573 7.63365 19.7978 6.70235 18.7651 6.44585V3.58487C18.7696 3.26748 18.5103 3.00929 18.1923 3.0138Z" fill="#262728"/>
+                        </svg>
+                    </div>
+
+
+                    <div class="filter-category">
+                        <div class="filter-category-scroll" id="filterScroll">
+                            <button class="filter-item active">Все категории</button>
+
+                            <button class="filter-item category-blue">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M22 8.99997L12 4.99997L2 8.99997L12 13L22 8.99997ZM22 8.99997V15" stroke="#5489F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6 10.5999V15.9999C6 16.7956 6.63214 17.5587 7.75736 18.1213C8.88258 18.6839 10.4087 18.9999 12 18.9999C13.5913 18.9999 15.1174 18.6839 16.2426 18.1213C17.3679 17.5587 18 16.7956 18 15.9999V10.5999" stroke="#5489F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Образование
+                            </button>
+
+                            <button class="filter-item category-violet">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M8 8V6C8 4.9 8.9 4 10 4H14C15.1 4 16 4.9 16 6V8M4 12H20M4 8H20V18H4V8Z" stroke="#8A6BEC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Бизнес
+                            </button>
+
+                            <button class="filter-item category-pink">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M8.1 21.213C6.88334 20.6877 5.825 19.975 4.925 19.075C4.025 18.175 3.31267 17.1167 2.788 15.9C2.26333 14.6833 2.00067 13.3833 2 12C1.99933 10.6167 2.262 9.31667 2.788 8.1C3.314 6.88334 4.02633 5.825 4.925 4.925C5.82367 4.025 6.882 3.31267 8.1 2.788C9.318 2.26333 10.618 2.00067 12 2C13.382 1.99933 14.682 2.262 15.9 2.788C17.118 3.314 18.1763 4.02633 19.075 4.925C19.9737 5.82367 20.6863 6.882 21.213 8.1C21.7397 9.318 22.002 10.618 22 12C21.998 13.382 21.7353 14.682 21.212 15.9C20.6887 17.118 19.9763 18.1763 19.075 19.075C18.1737 19.9737 17.1153 20.6863 15.9 21.213C14.6847 21.7397 13.3847 22.002 12 22C10.6153 21.998 9.31534 21.7363 8.1 21.213ZM17.675 17.675C19.225 16.125 20 14.2333 20 12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20C14.2333 20 16.125 19.225 17.675 17.675ZM7.75 16.25C6.58333 15.0833 6 13.6667 6 12C6 10.3333 6.58333 8.91667 7.75 7.75C8.91667 6.58333 10.3333 6 12 6C13.6667 6 15.0833 6.58333 16.25 7.75C17.4167 8.91667 18 10.3333 18 12C18 13.6667 17.4167 15.0833 16.25 16.25C15.0833 17.4167 13.6667 18 12 18C10.3333 18 8.91667 17.4167 7.75 16.25ZM14.825 14.825C15.6083 14.0417 16 13.1 16 12C16 10.9 15.6083 9.95833 14.825 9.175C14.0417 8.39167 13.1 8 12 8C10.9 8 9.95833 8.39167 9.175 9.175C8.39167 9.95833 8 10.9 8 12C8 13.1 8.39167 14.0417 9.175 14.825C9.95833 15.6083 10.9 16 12 16C13.1 16 14.0417 15.6083 14.825 14.825ZM10.588 13.413C10.196 13.021 10 12.55 10 12C10 11.45 10.196 10.9793 10.588 10.588C10.98 10.1967 11.4507 10.0007 12 10C12.5493 9.99933 13.0203 10.1953 13.413 10.588C13.8057 10.9807 14.0013 11.4513 14 12C13.9987 12.5487 13.803 13.0197 13.413 13.413C13.023 13.8063 12.552 14.002 12 14C11.448 13.998 10.9773 13.8023 10.588 13.413Z" fill="#EA4C6D"/>
+                                </svg>
+                                Маркетинг
+                            </button>
+
+                            <button class="filter-item category-orange">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 4V20M12 8H16M12 12H16M5 4H19V20H5V4Z" stroke="#FC7D28" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                История
+                            </button>
+
+                            <button class="filter-item category-green">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 4H15V9H20V15H15V20H9V15H4V9H9V4Z" stroke="#1AA47C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                Медицина
+                            </button>
+
+                            <button class="filter-item category-LBlue">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M7 8L3 12L7 16M17 8L21 12L17 16M14 5L10 19" stroke="#28BCFC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                IT и технологии
+                            </button>
+
+                            <button class="filter-item category-green">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20l9-16H3l9 16z"/></svg>
+                                Экономика
+                            </button>
+
+
+                        </div>
+
+                        <button class="filter-nav-btn" id="filterNextBtn" aria-label="Прокрутить вправо">
+                            <i class="icon icon-arrow"></i>
+                        </button>
+                    </div>
+
+
+                </div>
+
+                <div class="catalog-items-header G-align-center">
+                    <div class="templates-count G-align-center">
+                        <span>Найдено 4 528 641</span>
+                        <p>презентаций</p>
+
+                    </div>
+                    <div class="sort-select G-align-center">
+                        <p>Сортировать:</p>
+                        <div class="c-categories-select">
+                            <div class="c-select-header G-align-center">
+                                <p>Популярные</p>
+                                <i class="icon icon-arrow-down"></i>
+                            </div>
+                            <ul class="c-select-options G-flex-column">
+                                <li class="active">
+                                    <span>Популярные</span>
+                                    <i class="icon icon-check"></i>
+                                </li>
+
+                                <li>
+                                    <span>Новые</span>
+                                    <i class="icon icon-check"></i>
+                                </li>
+
+                                <li>
+                                    <span>Часто используемые</span>
+                                    <i class="icon icon-check"></i>
+                                </li>
+
+                                <li>
+                                    <span>Высокий рейтинг</span>
+                                    <i class="icon icon-check"></i>
+                                </li>
+
+                                <li>
+                                    <span>Самые быстрые</span>
+                                    <i class="icon icon-check"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="catalog-main-cnt">
+                    <div class="touchstart catalog-filters-main ">
+                        <div class="catalog-filters-wrapper">
+                            <div class="modal-drag-zone">
+                                <span class="close-filt-map"></span>
+                            </div>
+                            <div class="reset-filters-mobile G-align-center">
+                                <h4>Фильтры</h4>
+                                <div class="reset-filters">
+                                    Сбросить
+                                </div>
+                            </div>
+
+                            <div class="catalog-filters-items">
+
+                                <div class="c-filter-item">
+                                    <p class="c-filter-title">Категории</p>
+                                    <div class="catalog-check-col G-flex-column">
+                                        <label class="checkbox-chek">
+                                            <small>Образование</small>
+                                            <input type="checkbox">
+                                            <span class="checkmark">
+                                                <i class="icon icon-check"></i>
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-chek">
+                                            <small>Бизнес</small>
+                                            <input type="checkbox">
+                                            <span class="checkmark">
+                                                <i class="icon icon-check"></i>
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-chek">
+                                            <small>Маркетинг</small>
+                                            <input type="checkbox">
+                                            <span class="checkmark">
+                                            <i class="icon icon-check"></i>
+                                        </span>
+                                        </label>
+                                        <label class="checkbox-chek">
+                                            <small>История</small>
+                                            <input type="checkbox">
+                                            <span class="checkmark">
+                                                <i class="icon icon-check"></i>
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-chek">
+                                            <small>Медицина</small>
+                                            <input type="checkbox">
+                                            <span class="checkmark">
+                                                <i class="icon icon-check"></i>
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-chek">
+                                            <small>IT и технологии</small>
+                                            <input type="checkbox">
+                                            <span class="checkmark">
+                                                <i class="icon icon-check"></i>
+                                            </span>
+                                        </label>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="catalog-filters-line"></div>
+
+                                <div class="c-filter-item">
+                                    <p class="c-filter-title">Для кого</p>
+                                    <div class="catalog-check-col G-flex-column">
+                                        <label class="checkbox-chek">
+                                            <small>Школьникам</small>
+                                            <input type="checkbox">
+                                            <span class="checkmark">
+                                                <i class="icon icon-check"></i>
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-chek">
+                                            <small>Студентам</small>
+                                            <input type="checkbox">
+                                            <span class="checkmark">
+                                                <i class="icon icon-check"></i>
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-chek">
+                                            <small>Преподавателям</small>
+                                            <input type="checkbox">
+                                            <span class="checkmark">
+                                            <i class="icon icon-check"></i>
+                                        </span>
+                                        </label>
+                                        <label class="checkbox-chek">
+                                            <small>Бизнесу</small>
+                                            <input type="checkbox">
+                                            <span class="checkmark">
+                                                <i class="icon icon-check"></i>
+                                            </span>
+                                        </label>
+                                    </div>
+
+                                </div>
+
+                                <div class="catalog-filters-line"></div>
+
+                                <div class="c-filter-item">
+                                    <p class="c-filter-title">Стиль оформления</p>
+                                    <div class="catalog-check-col G-flex-column">
+                                        <label class="checkbox-chek">
+                                            <small>Минимализм</small>
+                                            <input type="checkbox">
+                                            <span class="checkmark">
+                                                <i class="icon icon-check"></i>
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-chek">
+                                            <small>Современный</small>
+                                            <input type="checkbox">
+                                            <span class="checkmark">
+                                                <i class="icon icon-check"></i>
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-chek">
+                                            <small>Корпоративный</small>
+                                            <input type="checkbox">
+                                            <span class="checkmark">
+                                                <i class="icon icon-check"></i>
+                                            </span>
+                                        </label>
+                                        <label class="checkbox-chek">
+                                            <small>Креативный</small>
+                                            <input type="checkbox">
+                                            <span class="checkmark">
+                                                <i class="icon icon-check"></i>
+                                            </span>
+                                        </label>
+                                    </div>
+
+                                </div>
+
+                                <div class="catalog-filters-line"></div>
+
+
+                                <div class="slider-block">
+                                    <p class="c-filter-title">Количество слайдов</p>
+
+
+                                    <div class="range-wrapper">
+                                        <div class="range-track"></div>
+                                        <div class="range-track-active" id="activeTrack"></div>
+                                        <input type="range" id="minRange" min="5" max="50" value="5" step="1">
+                                        <input type="range" id="maxRange" min="5" max="50" value="50" step="1">
+                                    </div>
+
+                                    <div class="range-labels">
+                                        <span>от <span id="minLabel">5</span></span>
+                                        <span>до <span id="maxLabel">50</span></span>
+                                    </div>
+                                </div>
+                                <div class="filter-btn">
+                                    <button class="reset-all">Показать 4 528 641</button>
+                                    <button class="btn-prompt">Сбросить всё</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-items-wrapper">
+                        <div class="c-selected-categories">
+                            <button>
+                                <span>Школьникам</span>
+                                <i class="icon icon-close2"></i>
+                            </button>
+
+                            <button>
+                                <span>Бизнесу</span>
+                                <i class="icon icon-close2"></i>
+                            </button>
+
+                            <button>
+                                <span>Минимализм</span>
+                                <i class="icon icon-close2"></i>
+                            </button>
+
+                            <button>
+                                <span>Креативный</span>
+                                <i class="icon icon-close2"></i>
+                            </button>
+
+                            <button>
+                                <span>10-20 слайдов</span>
+                                <i class="icon icon-close2"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="catalog-items">
+                            <a class="catalog-item" href="#">
+                                <div class="catalog-item-hints G-align-center">
+                                    <div class="catalog-item-status hit">Хит</div>
+
+                                    <div class="catalog-item-link G-center">
+                                        <i class="icon icon-arrow"></i>
+                                    </div>
+                                </div>
+                                <div class="catalog-item-img G-flex">
+                                    <img src="./assets/images/checker.png" alt="">
+                                </div>
+                                <div class="catalog-item-description">
+                                    <p class="catalog-item-name">Название темы презентации</p>
+                                    <div class="catalog-item-categories G-align-center">
+                                        <p>Маркетинг</p>
+                                        <span></span>
+                                        <p>15 слайдов</p>
+                                        <span></span>
+                                        <p>1.8k</p>
+                                    </div>
+                                    <div class="catalog-item-actions G-align-center">
+                                        <div class="catalog-item-rate G-align-center">
+                                            <img
+                                                    loading="lazy"
+                                                    src="assets/images/star.svg"
+                                                    alt=""
+                                                    width="12"
+                                                    height="12"
+                                            />
+                                            <p>4.8</p>
+                                        </div>
+                                        <div class="c-item-created-time G-align-center">
+                                            <i class="icon icon-time"></i>
+                                            <p>35 сек</p>
+                                        </div>
+
+                                        <div class="catalog-item-checked G-align-center">
+                                            <i class="icon icon-check"></i>
+                                            <p>98% PPTX</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-item-hover">
+                                    <p>Смотреть</p>
+                                </div>
+                            </a>
+
+                            <a class="catalog-item" href="#">
+                                <div class="catalog-item-hints G-align-center">
+
+                                    <div class="catalog-item-link G-center">
+                                        <i class="icon icon-arrow"></i>
+                                    </div>
+                                </div>
+                                <div class="catalog-item-img G-flex">
+                                    <img src="./assets/images/checker.png" alt="">
+
+                                </div>
+                                <div class="catalog-item-description">
+                                    <p class="catalog-item-name">Название темы презентации</p>
+                                    <div class="catalog-item-categories G-align-center">
+                                        <p>Маркетинг</p>
+                                        <span></span>
+                                        <p>15 слайдов</p>
+                                        <span></span>
+                                        <p>1.8k</p>
+                                    </div>
+                                    <div class="catalog-item-actions G-align-center">
+                                        <div class="catalog-item-rate G-align-center">
+                                            <img
+                                                    loading="lazy"
+                                                    src="assets/images/star.svg"
+                                                    alt=""
+                                                    width="12"
+                                                    height="12"
+                                            />
+                                            <p>4.8</p>
+                                        </div>
+                                        <div class="c-item-created-time G-align-center">
+                                            <i class="icon icon-time"></i>
+                                            <p>35 сек</p>
+                                        </div>
+
+                                        <div class="catalog-item-checked G-align-center">
+                                            <i class="icon icon-check"></i>
+                                            <p>98% PPTX</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-item-hover">
+                                    <p>Смотреть</p>
+                                </div>
+                            </a>
+
+                            <a class="catalog-item" href="#">
+                                <div class="catalog-item-hints G-align-center">
+                                    <div class="catalog-item-status new">Новое</div>
+
+                                    <div class="catalog-item-link G-center">
+                                        <i class="icon icon-arrow"></i>
+                                    </div>
+                                </div>
+                                <div class="catalog-item-img G-flex">
+                                    <img src="./assets/images/checker.png" alt="">
+
+                                </div>
+                                <div class="catalog-item-description">
+                                    <p class="catalog-item-name">Название темы презентации</p>
+                                    <div class="catalog-item-categories G-align-center">
+                                        <p>Маркетинг</p>
+                                        <span></span>
+                                        <p>15 слайдов</p>
+                                        <span></span>
+                                        <p>1.8k</p>
+                                    </div>
+                                    <div class="catalog-item-actions G-align-center">
+                                        <div class="catalog-item-rate G-align-center">
+                                            <img
+                                                    loading="lazy"
+                                                    src="assets/images/star.svg"
+                                                    alt=""
+                                                    width="12"
+                                                    height="12"
+                                            />
+                                            <p>4.8</p>
+                                        </div>
+                                        <div class="c-item-created-time G-align-center">
+                                            <i class="icon icon-time"></i>
+                                            <p>35 сек</p>
+                                        </div>
+
+                                        <div class="catalog-item-checked G-align-center">
+                                            <i class="icon icon-check"></i>
+                                            <p>98% PPTX</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-item-hover">
+                                    <p>Смотреть</p>
+                                </div>
+                            </a>
+
+                            <a class="catalog-item" href="#">
+                                <div class="catalog-item-hints G-align-center">
+                                    <div class="catalog-item-status new">Новое</div>
+
+                                    <div class="catalog-item-link G-center">
+                                        <i class="icon icon-arrow"></i>
+                                    </div>
+                                </div>
+                                <div class="catalog-item-img G-flex">
+                                    <img src="./assets/images/checker.png" alt="">
+
+                                </div>
+                                <div class="catalog-item-description">
+                                    <p class="catalog-item-name">Название темы презентации</p>
+                                    <div class="catalog-item-categories G-align-center">
+                                        <p>Маркетинг</p>
+                                        <span></span>
+                                        <p>15 слайдов</p>
+                                        <span></span>
+                                        <p>1.8k</p>
+                                    </div>
+                                    <div class="catalog-item-actions G-align-center">
+                                        <div class="catalog-item-rate G-align-center">
+                                            <img
+                                                    loading="lazy"
+                                                    src="assets/images/star.svg"
+                                                    alt=""
+                                                    width="12"
+                                                    height="12"
+                                            />
+                                            <p>4.8</p>
+                                        </div>
+                                        <div class="c-item-created-time G-align-center">
+                                            <i class="icon icon-time"></i>
+                                            <p>35 сек</p>
+                                        </div>
+
+                                        <div class="catalog-item-checked G-align-center">
+                                            <i class="icon icon-check"></i>
+                                            <p>98% PPTX</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-item-hover">
+                                    <p>Смотреть</p>
+                                </div>
+                            </a>
+
+                            <a class="catalog-item" href="#">
+                                <div class="catalog-item-hints G-align-center">
+
+                                    <div class="catalog-item-link G-center">
+                                        <i class="icon icon-arrow"></i>
+                                    </div>
+                                </div>
+                                <div class="catalog-item-img G-flex">
+                                    <img src="./assets/images/checker.png" alt="">
+
+                                </div>
+                                <div class="catalog-item-description">
+                                    <p class="catalog-item-name">Название темы презентации</p>
+                                    <div class="catalog-item-categories G-align-center">
+                                        <p>Маркетинг</p>
+                                        <span></span>
+                                        <p>15 слайдов</p>
+                                        <span></span>
+                                        <p>1.8k</p>
+                                    </div>
+                                    <div class="catalog-item-actions G-align-center">
+                                        <div class="catalog-item-rate G-align-center">
+                                            <img
+                                                    loading="lazy"
+                                                    src="assets/images/star.svg"
+                                                    alt=""
+                                                    width="12"
+                                                    height="12"
+                                            />
+                                            <p>4.8</p>
+                                        </div>
+                                        <div class="c-item-created-time G-align-center">
+                                            <i class="icon icon-time"></i>
+                                            <p>35 сек</p>
+                                        </div>
+
+                                        <div class="catalog-item-checked G-align-center">
+                                            <i class="icon icon-check"></i>
+                                            <p>98% PPTX</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-item-hover">
+                                    <p>Смотреть</p>
+                                </div>
+                            </a>
+                            <a class="catalog-item" href="#">
+                                <div class="catalog-item-hints G-align-center">
+
+                                    <div class="catalog-item-link G-center">
+                                        <i class="icon icon-arrow"></i>
+                                    </div>
+                                </div>
+                                <div class="catalog-item-img G-flex">
+                                    <img src="./assets/images/checker.png" alt="">
+
+                                </div>
+                                <div class="catalog-item-description">
+                                    <p class="catalog-item-name">Название темы презентации</p>
+                                    <div class="catalog-item-categories G-align-center">
+                                        <p>Маркетинг</p>
+                                        <span></span>
+                                        <p>15 слайдов</p>
+                                        <span></span>
+                                        <p>1.8k</p>
+                                    </div>
+                                    <div class="catalog-item-actions G-align-center">
+                                        <div class="catalog-item-rate G-align-center">
+                                            <img
+                                                    loading="lazy"
+                                                    src="assets/images/star.svg"
+                                                    alt=""
+                                                    width="12"
+                                                    height="12"
+                                            />
+                                            <p>4.8</p>
+                                        </div>
+                                        <div class="c-item-created-time G-align-center">
+                                            <i class="icon icon-time"></i>
+                                            <p>35 сек</p>
+                                        </div>
+
+                                        <div class="catalog-item-checked G-align-center">
+                                            <i class="icon icon-check"></i>
+                                            <p>98% PPTX</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-item-hover">
+                                    <p>Смотреть</p>
+                                </div>
+                            </a>
+
+                            <a class="catalog-item" href="#">
+                                <div class="catalog-item-hints G-align-center">
+
+                                    <div class="catalog-item-link G-center">
+                                        <i class="icon icon-arrow"></i>
+                                    </div>
+                                </div>
+                                <div class="catalog-item-img G-flex">
+                                    <img src="./assets/images/checker.png" alt="">
+
+                                </div>
+                                <div class="catalog-item-description">
+                                    <p class="catalog-item-name">Название темы презентации</p>
+                                    <div class="catalog-item-categories G-align-center">
+                                        <p>Маркетинг</p>
+                                        <span></span>
+                                        <p>15 слайдов</p>
+                                        <span></span>
+                                        <p>1.8k</p>
+                                    </div>
+                                    <div class="catalog-item-actions G-align-center">
+                                        <div class="catalog-item-rate G-align-center">
+                                            <img
+                                                    loading="lazy"
+                                                    src="assets/images/star.svg"
+                                                    alt=""
+                                                    width="12"
+                                                    height="12"
+                                            />
+                                            <p>4.8</p>
+                                        </div>
+                                        <div class="c-item-created-time G-align-center">
+                                            <i class="icon icon-time"></i>
+                                            <p>35 сек</p>
+                                        </div>
+
+                                        <div class="catalog-item-checked G-align-center">
+                                            <i class="icon icon-check"></i>
+                                            <p>98% PPTX</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-item-hover">
+                                    <p>Смотреть</p>
+                                </div>
+                            </a>
+
+                            <a class="catalog-item" href="#">
+                                <div class="catalog-item-hints G-align-center">
+                                    <div class="catalog-item-status new">Новое</div>
+
+                                    <div class="catalog-item-link G-center">
+                                        <i class="icon icon-arrow"></i>
+                                    </div>
+                                </div>
+                                <div class="catalog-item-img G-flex">
+                                    <img src="./assets/images/checker.png" alt="">
+
+                                </div>
+                                <div class="catalog-item-description">
+                                    <p class="catalog-item-name">Название темы презентации</p>
+                                    <div class="catalog-item-categories G-align-center">
+                                        <p>Маркетинг</p>
+                                        <span></span>
+                                        <p>15 слайдов</p>
+                                        <span></span>
+                                        <p>1.8k</p>
+                                    </div>
+                                    <div class="catalog-item-actions G-align-center">
+                                        <div class="catalog-item-rate G-align-center">
+                                            <img
+                                                    loading="lazy"
+                                                    src="assets/images/star.svg"
+                                                    alt=""
+                                                    width="12"
+                                                    height="12"
+                                            />
+                                            <p>4.8</p>
+                                        </div>
+                                        <div class="c-item-created-time G-align-center">
+                                            <i class="icon icon-time"></i>
+                                            <p>35 сек</p>
+                                        </div>
+
+                                        <div class="catalog-item-checked G-align-center">
+                                            <i class="icon icon-check"></i>
+                                            <p>98% PPTX</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-item-hover">
+                                    <p>Смотреть</p>
+                                </div>
+                            </a>
+
+                            <a class="catalog-item" href="#">
+                                <div class="catalog-item-hints G-align-center">
+
+                                    <div class="catalog-item-link G-center">
+                                        <i class="icon icon-arrow"></i>
+                                    </div>
+                                </div>
+                                <div class="catalog-item-img G-flex">
+                                    <img src="./assets/images/checker.png" alt="">
+
+                                </div>
+                                <div class="catalog-item-description">
+                                    <p class="catalog-item-name">Название темы презентации</p>
+                                    <div class="catalog-item-categories G-align-center">
+                                        <p>Маркетинг</p>
+                                        <span></span>
+                                        <p>15 слайдов</p>
+                                        <span></span>
+                                        <p>1.8k</p>
+                                    </div>
+                                    <div class="catalog-item-actions G-align-center">
+                                        <div class="catalog-item-rate G-align-center">
+                                            <img
+                                                    loading="lazy"
+                                                    src="assets/images/star.svg"
+                                                    alt=""
+                                                    width="12"
+                                                    height="12"
+                                            />
+                                            <p>4.8</p>
+                                        </div>
+                                        <div class="c-item-created-time G-align-center">
+                                            <i class="icon icon-time"></i>
+                                            <p>35 сек</p>
+                                        </div>
+
+                                        <div class="catalog-item-checked G-align-center">
+                                            <i class="icon icon-check"></i>
+                                            <p>98% PPTX</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-item-hover">
+                                    <p>Смотреть</p>
+                                </div>
+                            </a>
+                            <a class="catalog-item" href="#">
+                                <div class="catalog-item-hints G-align-center">
+
+                                    <div class="catalog-item-link G-center">
+                                        <i class="icon icon-arrow"></i>
+                                    </div>
+                                </div>
+                                <div class="catalog-item-img G-flex">
+                                    <img src="./assets/images/checker.png" alt="">
+
+                                </div>
+                                <div class="catalog-item-description">
+                                    <p class="catalog-item-name">Название темы презентации</p>
+                                    <div class="catalog-item-categories G-align-center">
+                                        <p>Маркетинг</p>
+                                        <span></span>
+                                        <p>15 слайдов</p>
+                                        <span></span>
+                                        <p>1.8k</p>
+                                    </div>
+                                    <div class="catalog-item-actions G-align-center">
+                                        <div class="catalog-item-rate G-align-center">
+                                            <img
+                                                    loading="lazy"
+                                                    src="assets/images/star.svg"
+                                                    alt=""
+                                                    width="12"
+                                                    height="12"
+                                            />
+                                            <p>4.8</p>
+                                        </div>
+                                        <div class="c-item-created-time G-align-center">
+                                            <i class="icon icon-time"></i>
+                                            <p>35 сек</p>
+                                        </div>
+
+                                        <div class="catalog-item-checked G-align-center">
+                                            <i class="icon icon-check"></i>
+                                            <p>98% PPTX</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-item-hover">
+                                    <p>Смотреть</p>
+                                </div>
+                            </a>
+
+                            <a class="catalog-item" href="#">
+                                <div class="catalog-item-hints G-align-center">
+                                    <div class="catalog-item-status new">Новое</div>
+
+                                    <div class="catalog-item-link G-center">
+                                        <i class="icon icon-arrow"></i>
+                                    </div>
+                                </div>
+                                <div class="catalog-item-img G-flex">
+                                    <img src="./assets/images/checker.png" alt="">
+
+                                </div>
+                                <div class="catalog-item-description">
+                                    <p class="catalog-item-name">Название темы презентации</p>
+                                    <div class="catalog-item-categories G-align-center">
+                                        <p>Маркетинг</p>
+                                        <span></span>
+                                        <p>15 слайдов</p>
+                                        <span></span>
+                                        <p>1.8k</p>
+                                    </div>
+                                    <div class="catalog-item-actions G-align-center">
+                                        <div class="catalog-item-rate G-align-center">
+                                            <img
+                                                    loading="lazy"
+                                                    src="assets/images/star.svg"
+                                                    alt=""
+                                                    width="12"
+                                                    height="12"
+                                            />
+                                            <p>4.8</p>
+                                        </div>
+                                        <div class="c-item-created-time G-align-center">
+                                            <i class="icon icon-time"></i>
+                                            <p>35 сек</p>
+                                        </div>
+
+                                        <div class="catalog-item-checked G-align-center">
+                                            <i class="icon icon-check"></i>
+                                            <p>98% PPTX</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-item-hover">
+                                    <p>Смотреть</p>
+                                </div>
+                            </a>
+
+                            <a class="catalog-item" href="#">
+                                <div class="catalog-item-hints G-align-center">
+
+                                    <div class="catalog-item-link G-center">
+                                        <i class="icon icon-arrow"></i>
+                                    </div>
+                                </div>
+                                <div class="catalog-item-img G-flex">
+                                    <img src="./assets/images/checker.png" alt="">
+
+                                </div>
+                                <div class="catalog-item-description">
+                                    <p class="catalog-item-name">Название темы презентации</p>
+                                    <div class="catalog-item-categories G-align-center">
+                                        <p>Маркетинг</p>
+                                        <span></span>
+                                        <p>15 слайдов</p>
+                                        <span></span>
+                                        <p>1.8k</p>
+                                    </div>
+                                    <div class="catalog-item-actions G-align-center">
+                                        <div class="catalog-item-rate G-align-center">
+                                            <img
+                                                    loading="lazy"
+                                                    src="assets/images/star.svg"
+                                                    alt=""
+                                                    width="12"
+                                                    height="12"
+                                            />
+                                            <p>4.8</p>
+                                        </div>
+                                        <div class="c-item-created-time G-align-center">
+                                            <i class="icon icon-time"></i>
+                                            <p>35 сек</p>
+                                        </div>
+
+                                        <div class="catalog-item-checked G-align-center">
+                                            <i class="icon icon-check"></i>
+                                            <p>98% PPTX</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-item-hover">
+                                    <p>Смотреть</p>
+                                </div>
+                            </a>
+                            <a class="catalog-item" href="#">
+                                <div class="catalog-item-hints G-align-center">
+
+                                    <div class="catalog-item-link G-center">
+                                        <i class="icon icon-arrow"></i>
+                                    </div>
+                                </div>
+                                <div class="catalog-item-img G-flex">
+                                    <img src="./assets/images/checker.png" alt="">
+
+                                </div>
+                                <div class="catalog-item-description">
+                                    <p class="catalog-item-name">Название темы презентации</p>
+                                    <div class="catalog-item-categories G-align-center">
+                                        <p>Маркетинг</p>
+                                        <span></span>
+                                        <p>15 слайдов</p>
+                                        <span></span>
+                                        <p>1.8k</p>
+                                    </div>
+                                    <div class="catalog-item-actions G-align-center">
+                                        <div class="catalog-item-rate G-align-center">
+                                            <img
+                                                    loading="lazy"
+                                                    src="assets/images/star.svg"
+                                                    alt=""
+                                                    width="12"
+                                                    height="12"
+                                            />
+                                            <p>4.8</p>
+                                        </div>
+                                        <div class="c-item-created-time G-align-center">
+                                            <i class="icon icon-time"></i>
+                                            <p>35 сек</p>
+                                        </div>
+
+                                        <div class="catalog-item-checked G-align-center">
+                                            <i class="icon icon-check"></i>
+                                            <p>98% PPTX</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-item-hover">
+                                    <p>Смотреть</p>
+                                </div>
+                            </a>
+
+                            <a class="catalog-item" href="#">
+                                <div class="catalog-item-hints G-align-center">
+                                    <div class="catalog-item-status new">Новое</div>
+
+                                    <div class="catalog-item-link G-center">
+                                        <i class="icon icon-arrow"></i>
+                                    </div>
+                                </div>
+                                <div class="catalog-item-img G-flex">
+                                    <img src="./assets/images/checker.png" alt="">
+
+                                </div>
+                                <div class="catalog-item-description">
+                                    <p class="catalog-item-name">Название темы презентации</p>
+                                    <div class="catalog-item-categories G-align-center">
+                                        <p>Маркетинг</p>
+                                        <span></span>
+                                        <p>15 слайдов</p>
+                                        <span></span>
+                                        <p>1.8k</p>
+                                    </div>
+                                    <div class="catalog-item-actions G-align-center">
+                                        <div class="catalog-item-rate G-align-center">
+                                            <img
+                                                    loading="lazy"
+                                                    src="assets/images/star.svg"
+                                                    alt=""
+                                                    width="12"
+                                                    height="12"
+                                            />
+                                            <p>4.8</p>
+                                        </div>
+                                        <div class="c-item-created-time G-align-center">
+                                            <i class="icon icon-time"></i>
+                                            <p>35 сек</p>
+                                        </div>
+
+                                        <div class="catalog-item-checked G-align-center">
+                                            <i class="icon icon-check"></i>
+                                            <p>98% PPTX</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-item-hover">
+                                    <p>Смотреть</p>
+                                </div>
+                            </a>
+
+                            <a class="catalog-item" href="#">
+                                <div class="catalog-item-hints G-align-center">
+
+                                    <div class="catalog-item-link G-center">
+                                        <i class="icon icon-arrow"></i>
+                                    </div>
+                                </div>
+                                <div class="catalog-item-img G-flex">
+                                    <img src="./assets/images/checker.png" alt="">
+
+                                </div>
+                                <div class="catalog-item-description">
+                                    <p class="catalog-item-name">Название темы презентации</p>
+                                    <div class="catalog-item-categories G-align-center">
+                                        <p>Маркетинг</p>
+                                        <span></span>
+                                        <p>15 слайдов</p>
+                                        <span></span>
+                                        <p>1.8k</p>
+                                    </div>
+                                    <div class="catalog-item-actions G-align-center">
+                                        <div class="catalog-item-rate G-align-center">
+                                            <img
+                                                    loading="lazy"
+                                                    src="assets/images/star.svg"
+                                                    alt=""
+                                                    width="12"
+                                                    height="12"
+                                            />
+                                            <p>4.8</p>
+                                        </div>
+                                        <div class="c-item-created-time G-align-center">
+                                            <i class="icon icon-time"></i>
+                                            <p>35 сек</p>
+                                        </div>
+
+                                        <div class="catalog-item-checked G-align-center">
+                                            <i class="icon icon-check"></i>
+                                            <p>98% PPTX</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="c-item-hover">
+                                    <p>Смотреть</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="G-center">
+                            <a href="#" class="see-more">Показать ещё</a>
+                        </div>
+                        <div class="catalog-pagination G-center">
+                            <i
+                                    class="icon icon-arrow-down c-pagination-prev disabled"
+                            ></i>
+                            <ul>
+                                <li>
+                                    <a class="active" href="#">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon icon-dots"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">12</a>
+                                </li>
+                            </ul>
+                            <i class="icon icon-arrow-down c-pagination-next"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="find-present">
+            <div class="container">
+                <div class="find-present-box">
+                    <div class="section-titles  G-column-center show">
+                        <div class="section-tag G-align-center">
+                            <i class="icon icon-star"></i>
+                            <span>Генерация по промпту</span>
+                        </div>
+                        <h2 class="section-big-title">
+                            Не нашли подходящую
+                            <span class="product-log"></span>
+                            <span class="text-blue">презентацию?</span>
+                        </h2>
+                        <p class="section-sub-title">
+                            Опишите тему своими словами, а Slidy <strong>автоматически создаст</strong> структуру, содержание и современное оформление за несколько минут
+                        </p>
+                    </div>
+                    <div class="possibilit-box G-flex-column G-align-start  ">
+                        <h4>Что будем создавать?</h4>
+                        <div class="possibilit-form G-align-center">
+                            <textarea placeholder="Например: «Презентация новой линейки продукта» с графиками и диаграммами"></textarea>
+                            <div class="possibilit-btn G-align-center">
+                                <i class="icon icon-stars"></i>
+                                <button class="btn-start btn-create">
+                                    <span>Создать бесплатно</span>
+                                    <i class="icon chips-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="padding-blocs">
+            <div class="container">
+                <div class="title-blocs G-flex-column G-align-start">
+                    <h3 class="section-title">Популярные темы</h3>
+                    <p>Самые востребованные темы, которые пользователи ищут каждый день</p>
+                </div>
+                <div class="popular-topics G-flex-wrap">
+                    <div class="popular-box card-fon G-align-center">
+                        <div class="popular-arrow background-blue">
+                            <i class="icon icon-arrow"></i>
+                        </div>
+                        <div class="popular-text">
+                            <h4>Pitch Deck</h4>
+                            <p>1 254 презентации</p>
+                        </div>
+                    </div>
+                    <div class="popular-box card-fon G-align-center">
+                        <div class="popular-arrow background-green">
+                            <i class="icon icon-arrow"></i>
+                        </div>
+                        <div class="popular-text">
+                            <h4>Roadmap</h4>
+                            <p>954 презентации</p>
+                        </div>
+                    </div>
+                    <div class="popular-box card-fon G-align-center">
+                        <div class="popular-arrow background-violet">
+                            <i class="icon icon-arrow"></i>
+                        </div>
+                        <div class="popular-text">
+                            <h4>Бизнес-планы</h4>
+                            <p>1 087 презентаций</p>
+                        </div>
+                    </div>
+                    <div class="popular-box card-fon G-align-center">
+                        <div class="popular-arrow background-pinky">
+                            <i class="icon icon-arrow"></i>
+                        </div>
+                        <div class="popular-text">
+                            <h4>SWOT-анализ</h4>
+                            <p>735 презентаций</p>
+                        </div>
+                    </div>
+                    <div class="popular-box card-fon G-align-center">
+                        <div class="popular-arrow background-green">
+                            <i class="icon icon-arrow"></i>
+                        </div>
+                        <div class="popular-text">
+                            <h4>Экология</h4>
+                            <p>684 презентации</p>
+                        </div>
+                    </div>
+                    <div class="popular-box card-fon G-align-center">
+                        <div class="popular-arrow background-orange">
+                            <i class="icon icon-arrow"></i>
+                        </div>
+                        <div class="popular-text">
+                            <h4>История</h4>
+                            <p>12 430 презентаций</p>
+                        </div>
+                    </div>
+                    <div class="popular-box card-fon G-align-center">
+                        <div class="popular-arrow background-lime">
+                            <i class="icon icon-arrow"></i>
+                        </div>
+                        <div class="popular-text">
+                            <h4>Биология</h4>
+                            <p>8 730 презентаций</p>
+                        </div>
+                    </div>
+                    <div class="popular-box card-fon G-align-center">
+                        <div class="popular-arrow background-LBlue">
+                            <i class="icon icon-arrow"></i>
+                        </div>
+                        <div class="popular-text">
+                            <h4>Искусственный интеллект</h4>
+                            <p>6 890 презентаций</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="padding-blocs">
+            <div class="container">
+                <div class="title-blocs G-flex-column G-align-start">
+                    <h3 class="section-title">Самые популярные презентации недели</h3>
+                    <p>Подборка презентаций с самым большим количеством просмотров и сохранений за последние дни</p>
+                </div>
+                <div class="gallery-boxes">
+                    <div class="swiper gallerySlider">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="card-gallery">
+                                    <div class="card-gallery-link G-center">
+                                        <i class="icon icon-arrow"></i>
+                                    </div>
+                                    <img src="./assets/images/checker.png" alt="">
+                                    <div class="card-gallery-info">
+                                        <h4>Искусственный интеллект и его влияние на общество</h4>
+                                        <div class="card-gallery-data G-align-center G-justify-between">
+                                            <span class="posst-name bg-blue">Тег</span>
+                                            <small>15.09.2025</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-gallery">
+                                    <div class="card-gallery-link G-center">
+                                        <i class="icon icon-arrow"></i>
+                                    </div>
+                                    <img src="./assets/images/checker.png" alt="">
+                                    <div class="card-gallery-info">
+                                        <h4>Искусственный интеллект и его влияние на общество</h4>
+                                        <div class="card-gallery-data G-align-center G-justify-between">
+                                            <span class="posst-name bg-blue">Тег</span>
+                                            <small>15.09.2025</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card-gallery">
+                                    <div class="card-gallery-link G-center">
+                                        <i class="icon icon-arrow"></i>
+                                    </div>
+                                    <img src="./assets/images/checker.png" alt="">
+                                    <div class="card-gallery-info">
+                                        <h4>Искусственный интеллект и его влияние на общество</h4>
+                                        <div class="card-gallery-data G-align-center G-justify-between">
+                                            <span class="posst-name bg-blue">Тег</span>
+                                            <small>15.09.2025</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-gallery">
+                                    <div class="card-gallery-link G-center">
+                                        <i class="icon icon-arrow"></i>
+                                    </div>
+                                    <img src="./assets/images/checker.png" alt="">
+                                    <div class="card-gallery-info">
+                                        <h4>Искусственный интеллект и его влияние на общество</h4>
+                                        <div class="card-gallery-data G-align-center G-justify-between">
+                                            <span class="posst-name bg-blue">Тег</span>
+                                            <small>15.09.2025</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card-gallery">
+                                    <div class="card-gallery-link G-center">
+                                        <i class="icon icon-arrow"></i>
+                                    </div>
+                                    <img src="./assets/images/checker.png" alt="">
+                                    <div class="card-gallery-info">
+                                        <h4>Искусственный интеллект и его влияние на общество</h4>
+                                        <div class="card-gallery-data G-align-center G-justify-between">
+                                            <span class="posst-name bg-blue">Тег</span>
+                                            <small>15.09.2025</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card-gallery">
+                                    <div class="card-gallery-link G-center">
+                                        <i class="icon icon-arrow"></i>
+                                    </div>
+                                    <img src="./assets/images/checker.png" alt="">
+                                    <div class="card-gallery-info">
+                                        <h4>Искусственный интеллект и его влияние на общество</h4>
+                                        <div class="card-gallery-data G-align-center G-justify-between">
+                                            <span class="posst-name bg-blue">Тег</span>
+                                            <small>15.09.2025</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="gallery-pagination swiper-pagination"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="padding-blocs">
+            <div class="container">
+                <div class="title-blocs G-flex-column G-align-start">
+                    <h3 class="section-title">Вам также может быть интересно</h3>
+                    <p>Продолжите поиск в похожих категориях и найдите ещё больше готовых презентаций</p>
+                </div>
+                <div class="interest-wrap G-flex-wrap">
+                    <div class="interest-card card-fon">
+                        <div class="interest-name">
+                            <h4><img loading="lazy" src="assets/images/mony.png" alt="" width="20" height="20"> Финансы</h4>
+                            <p>54 320 презентаций</p>
+                        </div>
+                        <div class="interest-arrow background-green">
+                            <i class="icon icon-arrow"></i>
+                        </div>
+                    </div>
+                    <div class="interest-card card-fon">
+                        <div class="interest-name">
+                            <h4><img loading="lazy" src="assets/images/basket.png" alt="" width="20" height="20"> Продажи</h4>
+                            <p>41 870 презентаций</p>
+                        </div>
+                        <div class="interest-arrow background-pinky">
+                            <i class="icon icon-arrow"></i>
+                        </div>
+                    </div>
+                    <div class="interest-card card-fon">
+                        <div class="interest-name">
+                            <h4><img loading="lazy" src="assets/images/raket.png" alt="" width="20" height="20"> Продажи</h4>
+                            <p>32 650 презентаций</p>
+                        </div>
+                        <div class="interest-arrow background-violet">
+                            <i class="icon icon-arrow"></i>
+                        </div>
+                    </div>
+                    <div class="interest-card card-fon">
+                        <div class="interest-name">
+                            <h4><img loading="lazy" src="assets/images/compareIcon1.png" alt="" width="20" height="20"> Стартапы</h4>
+                            <p>32 650 презентаций</p>
+                        </div>
+                        <div class="interest-arrow background-blue">
+                            <i class="icon icon-arrow"></i>
+                        </div>
+                    </div>
+                    <div class="interest-card card-fon">
+                        <div class="interest-name">
+                            <h4><img loading="lazy" src="assets/images/busines.png" alt="" width="20" height="20"> HR</h4>
+                            <p>16 280 презентаций</p>
+                        </div>
+                        <div class="interest-arrow background-orange">
+                            <i class="icon icon-arrow"></i>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="padding-blocs">
+            <div class="container">
+                <div class="title-blocs G-flex-column G-align-start">
+                    <h3 class="section-title">Почему выбирают Slidy</h3>
+                    <p>Готовые презентации можно бесплатно просмотреть, адаптировать под себя и продолжить работу в удобном формате</p>
+                </div>
+
+                <div class="choose-slidy">
+                    <div class="choose-wrap G-flex-wrap">
+                        <div class="choose-card">
+                            <div class="popular-arrow background-blue">
+                                <img src="./assets/images/icon-present.svg" alt="">
+                            </div>
+                            <div class="choose-name">
+                                <h3>5 млн+</h3>
+                                <p>— презентаций</p>
+                            </div>
+                        </div>
+                        <div class="choose-card">
+                            <div class="popular-arrow background-violet">
+                                <img src="./assets/images/iocn-free.svg" alt="">
+                            </div>
+                            <div class="choose-name">
+                                <h3>Бесплатный</h3>
+                                <p>— просмотр онлайн</p>
+                            </div>
+                        </div>
+                        <div class="choose-card">
+                            <div class="popular-arrow background-pinky">
+                                <img src="./assets/images/icon-editing.svg" alt="">
+                            </div>
+                            <div class="choose-name">
+                                <h3>Онлайн</h3>
+                                <p>— редактирование</p>
+                            </div>
+                        </div>
+                        <div class="choose-card">
+                            <div class="popular-arrow background-green">
+                                <img src="./assets/images/icon-PowerPoint.svg" alt="">
+                            </div>
+                            <div class="choose-name">
+                                <h3>Экспорт</h3>
+                                <p>— в PowerPoint</p>
+                            </div>
+                        </div>
+                        <div class="choose-card">
+                            <div class="popular-arrow background-orange">
+                                <img src="./assets/images/ai-creation.svg" alt="">
+                            </div>
+                            <div class="choose-name">
+                                <h3>AI</h3>
+                                <p>— создание с нуля</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="choose-col">
+                        <div class="choose-fon">
+
+                            <img loading="eager" src="assets/images/choose-cta-light.webp"
+                                 data-light="assets/images/choose-cta-light.webp"
+                                 data-dark="assets/images/choose-cta.webp" class="choose-img-desc" alt="">
+
+                            <img loading="eager" src="assets/images/choose-cta-mob-light.webp"
+                                 data-light="assets/images/choose-cta-mob-light.webp"
+                                 data-dark="assets/images/choose-cta-mob.webp" class="choose-img-mob" alt="">
+
+                        </div>
+                        <div class="choose-info">
+                            <div class="choose-title G-flex-column G-align-start">
+                                <div class="section-tag G-align-center">
+                                    <i class="icon icon-star"></i>
+                                    <span>Выбор пользователей</span>
+                                </div>
+                                <h3>
+                                    <span class="text-blue">5 млн+</span> пользователей
+                                    <span class="text-wrap">уже выбрали Slidy — ваша очередь</span>
+                                </h3>
+                            </div>
+                            <div class="choose-users G-align-center">
+                                <div class="choose-user">
+                                    <img loading="eager" src="assets/images/users-choice-light.png"
+                                         data-light="assets/images/users-choice-light.png"
+                                         data-dark="assets/images/users-choice.png" alt="">
+                                    <div class="choose-slaq">
+                                        <img src="./assets/images/slaq-users.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="choose-rew ">
+                                    <img src="./assets/images/star-choi.png" alt=""> <span>4.9</span>
+                                    <p>на основе отзывов</p>
+                                </div>
+                            </div>
+                            <div class="choose-btn G-align-center">
+                                <button class="btn-black G-align-center">
+                                    <i class="icon icon-stars"></i>
+                                    <span>Создать бесплатно</span>
+                                </button>
+                                <div class="choose-no-vpn">
+                                    <ul>
+                                        <li>Без VPN</li>
+                                        <li>Быстрая регистрация</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="padding-blocs">
+            <div class="container">
+                <div class="title-blocs G-flex-column G-align-start">
+                    <h3 class="section-title">Часто задаваемые вопросы</h3>
+                    <p>Все, что важно знать о просмотре, редактировании и экспорте готовых презентаций</p>
+                </div>
+
+
+                <div id="accordion" class="faq-columns block-cnt ">
+                    <div class="faq-column G-flex-column">
+                        <div class="often-asks-item ">
+                            <div class="asks-item-header link G-justify-between">
+                                <p>
+                                    Что можно создать в Slidy?
+                                </p>
+                                <div class="asks-list-icon G-center">
+                                    <i class="icon icon-plus"></i>
+                                </div>
+                            </div>
+                            <div class="asks-list-sub submenu">
+                                Четыре типа проектов: презентации, документы (рефераты, доклады, курсовые, отчёты, КП, резюме), изображения и видео. Всё в одном сервисе — картинку для слайда можно сгенерировать не выходя из презентации.
+                            </div>
+                        </div>
+
+                        <div class="often-asks-item ">
+                            <div class="asks-item-header link G-justify-between">
+                                <p>
+                                    Что умеет модуль изображений?
+                                </p>
+                                <div class="asks-list-icon G-center">
+                                    <i class="icon icon-plus"></i>
+                                </div>
+                            </div>
+                            <div class="asks-list-sub submenu">
+                                Генерирует картинку по текстовому описанию и обрабатывает ваши фото: удаляет и заменяет фон, улучшает качество, убирает лишние объекты.
+                            </div>
+                        </div>
+
+                        <div class="often-asks-item ">
+                            <div class="asks-item-header link G-justify-between">
+                                <p>Как работает генерация видео?</p>
+                                <div class="asks-list-icon G-center">
+                                    <i class="icon icon-plus"></i>
+                                </div>
+                            </div>
+                            <div class="asks-list-sub submenu">
+                                Опишите идею — нейросеть напишет сценарий, соберёт кадры и добавит озвучку. Готовый ролик скачивается в MP4.
+                            </div>
+                        </div>
+                        <div class="often-asks-item ">
+                            <div class="asks-item-header link G-justify-between">
+                                <p>Сколько стоит?</p>
+                                <div class="asks-list-icon G-center">
+                                    <i class="icon icon-plus"></i>
+                                </div>
+                            </div>
+                            <div class="asks-list-sub submenu">
+                                Первый проект можно создать бесплатно. Дальше — пробный доступ за 1 ₽ на неделю, после чего подписка продлевается автоматически по цене 899 ₽ в неделю. Отменить можно в любой момент в личном кабинете в один клик.
+                            </div>
+                        </div>
+
+                        <div class="often-asks-item ">
+                            <div class="asks-item-header link G-justify-between">
+                                <p>Спишутся ли деньги автоматически?</p>
+                                <div class="asks-list-icon G-center">
+                                    <i class="icon icon-plus"></i>
+                                </div>
+                            </div>
+                            <div class="asks-list-sub submenu">
+                                Да. После пробной недели за 1 ₽ подписка продлевается автоматически. Мы напоминаем об этом письмом за день до списания. Отмена — в один клик, без звонков и заявок.
+                            </div>
+                        </div>
+
+                        <div class="often-asks-item ">
+                            <div class="asks-item-header link G-justify-between">
+                                <p>Нужен ли VPN?</p>
+                                <div class="asks-list-icon G-center">
+                                    <i class="icon icon-plus"></i>
+                                </div>
+                            </div>
+                            <div class="asks-list-sub submenu">
+                                Нет. Slidy работает в России без VPN. Интерфейс, генерация и поддержка — на русском.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faq-column G-flex-column">
+
+
+                        <div class="often-asks-item ">
+                            <div class="asks-item-header link G-justify-between">
+                                <p>Как нейросеть создаёт презентацию?</p>
+                                <div class="asks-list-icon G-center">
+                                    <i class="icon icon-plus"></i>
+                                </div>
+                            </div>
+                            <div class="asks-list-sub submenu">
+                                Вы описываете тему своими словами. AI строит структуру слайдов, пишет текст, подбирает изображения и оформляет дизайн. Готовый проект открывается в редакторе.
+                            </div>
+                        </div>
+                        <div class="often-asks-item ">
+                            <div class="asks-item-header link G-justify-between">
+                                <p>Можно ли редактировать результат?</p>
+                                <div class="asks-list-icon G-center">
+                                    <i class="icon icon-plus"></i>
+                                </div>
+                            </div>
+                            <div class="asks-list-sub submenu">
+                                Да. Любой слайд, текст, изображение и цвет меняются в редакторе. Можно переписать блок или попросить AI переделать конкретный слайд.
+                            </div>
+                        </div>
+                        <div class="often-asks-item ">
+                            <div class="asks-item-header link G-justify-between">
+                                <p>В каких форматах скачивается результат?</p>
+                                <div class="asks-list-icon G-center">
+                                    <i class="icon icon-plus"></i>
+                                </div>
+                            </div>
+                            <div class="asks-list-sub submenu">
+                                Презентации — PPTX и PDF, документы — DOCX и PDF. Файлы открываются в PowerPoint, Google Slides и Word.
+                            </div>
+                        </div>
+                        <div class="often-asks-item ">
+                            <div class="asks-item-header link G-justify-between">
+                                <p>Можно ли загрузить свой файл?</p>
+                                <div class="asks-list-icon G-center">
+                                    <i class="icon icon-plus"></i>
+                                </div>
+                            </div>
+                            <div class="asks-list-sub submenu">
+                                Да. Загрузите документ или готовую презентацию — Slidy соберёт из них слайды или доработает то, что уже есть.
+                            </div>
+                        </div>
+                        <div class="often-asks-item ">
+                            <div class="asks-item-header link G-justify-between">
+                                <p>Подойдёт ли для учёбы?</p>
+                                <div class="asks-list-icon G-center">
+                                    <i class="icon icon-plus"></i>
+                                </div>
+                            </div>
+                            <div class="asks-list-sub submenu">
+                                Да, Slidy используют для рефератов, докладов, курсовых и презентаций к защите. Текст стоит проверять и дорабатывать под требования преподавателя — AI даёт основу, а не готовую к сдаче работу.
+                            </div>
+                        </div>
+                        <div class="often-asks-item ">
+                            <div class="asks-item-header link G-justify-between">
+                                <p>Можно ли работать с телефона?</p>
+                                <div class="asks-list-icon G-center">
+                                    <i class="icon icon-plus"></i>
+                                </div>
+                            </div>
+                            <div class="asks-list-sub submenu">
+                                Да, есть приложения для iOS и Android. Редактор пока доступен только в веб-версии.
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="study-sec padding-blocs">
+            <div class="container">
+                <div class="study-text">
+                    <h3 class="section-title">Каталог готовых презентаций для учёбы, бизнеса и работы</h3>
+                    <p>
+                        Каталог готовых презентаций Slidy — это большая библиотека пользовательских презентаций по образованию, бизнесу, маркетингу, IT, медицине, финансам и другим направлениям. Здесь можно быстро найти материалы для школы, университета, работы или собственного проекта.
+                    </p>
+                    <p>
+                        В нашем каталоге презентаций доступны миллионы работ с удобной системой поиска по категориям, темам и ключевым словам. Просматривайте презентации онлайн, сравнивайте варианты оформления и выбирайте наиболее подходящее решение для своей задачи.
+                    </p>
+                    <p>
+                        Если нужной презентации нет в каталоге, воспользуйтесь AI-редактором Slidy. Искусственный интеллект поможет создать новую презентацию с нуля, используя современные шаблоны и автоматически подготовленную структуру.
+                    </p>
+                </div>
+                <div class="study-flex">
+                    <div class="study-suitable study-border">
+                        <h3>Как пользоваться каталогом презентаций</h3>
+                        <div class="study-use-text">
+                            <ul>
+                                <li><span class="use-circle">1</span> Выберите категорию или воспользуйтесь поиском.</li>
+                                <li><span class="use-circle">2</span> Откройте понравившуюся презентацию.</li>
+                                <li><span class="use-circle">3</span> Просмотрите все слайды.</li>
+                                <li><span class="use-circle">4</span> При необходимости перейдите в редактор.</li>
+                                <li><span class="use-circle">5</span> Измените содержание и экспортируйте готовую презентацию.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="study-suitable study-border">
+                        <h3>Для кого подойдет каталог презентаций</h3>
+                        <p>Каталог создан для пользователей, которым регулярно необходимо готовить качественные презентации:</p>
+                        <div class="suitable-wrap G-flex-wrap">
+                            <div class="suitable">Школьники</div>
+                            <div class="suitable">Студенты</div>
+                            <div class="suitable">Преподаватели</div>
+                            <div class="suitable">Маркетологи</div>
+                            <div class="suitable">Предприниматели</div>
+                            <div class="suitable">HR-специалисты</div>
+                            <div class="suitable">Аналитики</div>
+                            <div class="suitable">Консультанты</div>
+                            <div class="suitable">Менеджеры</div>
+                            <div class="suitable">Руководители проектов</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefits-cnt study-border">
+                    <h3>Преимущества каталога презентаций Slidy</h3>
+                    <div class="benefits-wrap G-flex-wrap">
+                        <div class="benefits-item"><i class="icon icon-check"></i> 5 млн+ работ</div>
+                        <div class="benefits-item"><i class="icon icon-check"></i> Поиск по темам</div>
+                        <div class="benefits-item"><i class="icon icon-check"></i> Бесплатный просмотр</div>
+                        <div class="benefits-item"><i class="icon icon-check"></i> Редактор в браузере</div>
+                        <div class="benefits-item"><i class="icon icon-check"></i> Экспорт в PPTX</div>
+                        <div class="benefits-item"><i class="icon icon-check"></i> Создание с AI</div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+    <footer >
+        <div class="loss-quality-elips G-flex">
+            <img loading="lazy" src="./assets/images/elip-dark.png" alt="">
+        </div>
+        <div class="container">
+            <div class="footer-body ">
+                <div class="footer-bottom G-align-start">
+                    <div class="footer-logo-wrapper G-align-center">
+                        <a href="index.html" class="footer-logo G-flex">
+                            <img
+                                    loading="lazy"
+                                    src="assets/images/footerlogo.svg"
+                                    data-light="assets/images/footerlogo.svg"
+                                    data-dark="assets/images/logo-dark.svg"
+                                    alt="Slidy"
+                                    width="105"
+                                    height="29"
+                            />
+                        </a>
+
+                        <div
+                                class="language-select-wrapper footer-select-wrapper mobile-block"
+                        >
+                            <div class="language-select-header G-align-center">
+                                <div class="l-select-flag G-flex">
+                                    <img
+                                            loading="lazy"
+                                            src="assets/images/flag1.svg"
+                                            alt=""
+                                            width="28"
+                                            height="20"
+                                    />
+                                </div>
+                                <p>Русский</p>
+                                <i class="icon icon-arrow-down"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="footer-nav G-align-start">
+                        <div class="footer-nav-menu G-flex-column">
+                            <p>ПРОДУКТ</p>
+                            <ul>
+                                <li>
+                                    <a href="#">Цены</a>
+                                </li>
+                                <li>
+                                    <a href="#">Блог</a>
+                                </li>
+                                <li>
+                                    <a href="#">Промты</a>
+                                </li>
+                                <li>
+                                    <a href="catalog.html">Каталог презентаций</a>
+                                </li>
+                                <li>
+                                    <a href="#">Шаблоны</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-nav-menu G-flex-column">
+                            <p>КОМПАНИЯ</p>
+                            <ul>
+                                <li>
+                                    <a href="about.html">О нас</a>
+                                </li>
+                                <li>
+                                    <a href="#">Команда</a>
+                                </li>
+                                <li>
+                                    <a href="#">Помощь</a>
+                                </li>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-nav-menu G-flex-column">
+                            <p>РЕШЕНИЯ</p>
+                            <ul>
+                                <li>
+                                    <a href="#">Стартапам</a>
+                                </li>
+                                <li>
+                                    <a href="#">Маркетологам</a>
+                                </li>
+                                <li>
+                                    <a href="#">Отделам продаж</a>
+                                </li>
+                                <li>
+                                    <a href="#">Студентам</a>
+                                </li>
+                                <li>
+                                    <a href="#">Преподавателям</a>
+                                </li>
+                                <li>
+                                    <a href="#">Консультантам</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-nav-menu G-flex-column">
+                            <p>ПРАВОВАЯ ИНФОРМАЦИЯ</p>
+                            <ul>
+                                <li>
+                                    <a href="#">Юридическая информация</a>
+                                </li>
+                                <li>
+                                    <a href="#">Правила использования</a>
+                                </li>
+                                <li>
+                                    <a href="#">Политика cookie</a>
+                                </li>
+                                <li>
+                                    <a href="#">Соглашение об обработке данных</a>
+                                </li>
+                                <li>
+                                    <a href="#">Политика конфиденциальности</a>
+                                </li>
+                                <li>
+                                    <a href="#">Условия использования</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="footer-top G-flex">
+                    <div class="footer-column G-flex-column">
+                        <div class="footer-leng-all">
+                            <p class="footer-text text-for-ru">
+                                По всем вопросам, связанным с работой сервиса, вы можете связаться с <a href="">поддержкой</a>
+                            </p>
+                            <p class="footer-text text-for-all">
+                                По&nbsp;всем вопросам, связанным с&nbsp;работой сервиса, вы можете
+                                связаться с&nbsp;нами по&nbsp;электронной почте:
+                                <a href="mailto:help@slidy.ai">help@slidy.ai</a>
+                            </p>
+                        </div>
+
+                        <div
+                                class="language-select-wrapper footer-select-wrapper desktop-block"
+                        >
+                            <div class="language-select-header G-align-center">
+                                <div class="l-select-flag G-flex">
+                                    <img
+                                            loading="lazy"
+                                            src="assets/images/flag1.svg"
+                                            alt=""
+                                            width="28"
+                                            height="20"
+                                    />
+                                </div>
+                                <p>Русский</p>
+                                <i class="icon icon-arrow-down"></i>
+                            </div>
+                        </div>
+
+                        <p class="footer-clue desktop-block">
+                            © 2025 Slidy AI. Все права защищены
+                        </p>
+                    </div>
+                    <div class="footer-logos-column G-flex-column">
+                        <div class="footer-links G-align-center">
+                            <a href="#">
+                                <img
+                                        loading="lazy"
+                                        src="assets/images/telegram.svg"
+                                        alt=""
+                                        width="65"
+                                        height="65"
+                                />
+                            </a>
+
+                            <a href="#">
+                                <img
+                                        loading="lazy"
+                                        src="assets/images/vk.svg"
+                                        alt=""
+                                        width="65"
+                                        height="65"
+                                />
+                            </a>
+                        </div>
+
+                        <div class="footer-apps G-align-center">
+                            <a href="#">
+                                <img
+                                        loading="lazy"
+                                        src="assets/images/appStore.svg"
+                                        alt=""
+                                        width="185"
+                                        height="54"
+                                />
+                            </a>
+
+                            <a href="#">
+                                <img
+                                        loading="lazy"
+                                        src="assets/images/googlePlay.svg"
+                                        alt=""
+                                        width="65"
+                                        height="65"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                    <p class="footer-clue mobile-block">
+                        © 2025 Slidy AI. Все права защищены
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+
+
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/1.3.6/jquery.event.move.min.js" defer></script>
+<script defer src="assets/js/swiper.js"></script>
+<script defer src="assets/js/catalog.js"></script>
+<script defer src="assets/js/index.js"></script>
+
+
+<script>
+
+
+</script>
+
+
+</body>
+</html>

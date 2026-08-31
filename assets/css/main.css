@@ -194,7 +194,12 @@ ul li{
 
 
 
-
+.card-fon{
+  background: var(--main-container6);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  gap: 12px;
+}
 
 .section-padding{
   padding: 80px 0;
@@ -384,6 +389,9 @@ strong {
 .bread-crumbs ul li a {
   color: var(--text-color);
   opacity: 0.6;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }
 .bread-crumbs ul li span {
   font-weight: 400;
@@ -601,6 +609,15 @@ strong {
     font-size: 30px;
     line-height: 35px;
   }
+
+  .bread-crumbs ul li a {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .bread-crumbs ul li span {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 
@@ -670,7 +687,10 @@ strong {
   .hero-bg {
     height: 87%;
   }
-
+  .btn-start {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 
 
