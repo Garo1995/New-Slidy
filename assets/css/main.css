@@ -1040,6 +1040,9 @@ strong {
   .hero-section:before {
     top: 92px;
   }
+  .hero-bg img {
+    object-position: bottom;
+  }
 }
 
 

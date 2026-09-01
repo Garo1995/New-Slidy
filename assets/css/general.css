@@ -286,19 +286,7 @@
 .hero-generate label {
   width: 100%;
 }
-.hero-bg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-.hero-bg img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
+
 
 .hero-generate label input {
   width: 100%;
@@ -3953,7 +3941,7 @@ html[data-theme="dark"] .pointsDark-title{
     gap: 0;
   }
   .catalog-filters-main{
-  max-width: 500px;
+    max-width: 500px;
     position: fixed;
     width: 100%;
     height: auto;
@@ -3965,7 +3953,6 @@ html[data-theme="dark"] .pointsDark-title{
     z-index: 9992;
     background: var(--bg-color);
   }
-
 
   .touchstart-open {
     transform: translateY(0%) translateX(-50%);
@@ -4647,9 +4634,7 @@ html[data-theme="dark"] .pointsDark-title{
     min-height: auto;
   }
 
-  .hero-bg img {
-    object-position: bottom;
-  }
+
   .power-bg {
     top: 0;
     height: auto;
