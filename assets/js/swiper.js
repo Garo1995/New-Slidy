@@ -274,3 +274,80 @@ const moreSwiper = new Swiper('.more-market-slide', {
     },
   },
 });
+
+
+
+
+
+
+
+const technologiesSwiper = new Swiper(".technologies-slider", {
+  spaceBetween: 10,
+  slidesPerView:3,
+  pagination: {
+    el: ".technologies-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    '1199': {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    '767': {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    '690': {
+      slidesPerGroup: 1,
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    '320': {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 10,
+    },
+  },
+});
+
+
+
+
+
+
+
+
+
+
+
+const speedsSwiper = new Swiper(".slidy-speeds-slider", {
+  spaceBetween: 10,
+  slidesPerView: 3,
+  pagination: {
+    el: ".slidy-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    '1199': {
+      slidesPerView: 3,
+      spaceBetween: 10,
+    },
+    '767': {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    '690': {
+      slidesPerGroup: 1,
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    '320': {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 10,
+    },
+  },
+
+});

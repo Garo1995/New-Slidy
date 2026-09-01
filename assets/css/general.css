@@ -723,6 +723,44 @@ html[data-theme="dark"] .pointsDark-title{
 
 
 
+.linking-card-names{
+  margin-top: 16px;
+}
+.linking-card-names ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.linking-card-names ul li{
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border);
+  background: var(--slider-thumb);
+  width: max-content;
+  padding: 10px 16px 10px 12px;
+  gap: 8px;
+  border-radius: 100px;
+  font-weight: 500;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+}
+.linking-card-names-dark ul li{
+  border: 1px solid #FFFFFF1A;
+  background: #00000066;
+  color:#FFFFFF;
+
+}
+.linking-card .section-big-title{
+  color: #FFFFFF;
+}
+
+.linking-card .section-sub-title{
+  color: #fafdffb2;
+}
+
 
 
 
@@ -1368,9 +1406,9 @@ html[data-theme="dark"] .pointsDark-title{
 
 .c-select-options {
   position: absolute;
-  left: 0;
-  max-width: 252px;
-  width: 100%;
+  right: 0;
+  min-width: 252px;
+  width: 252px;
   background: var(--bg-color);
   border-radius: 8px;
   padding: 12px;
