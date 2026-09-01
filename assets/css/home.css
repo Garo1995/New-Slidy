@@ -474,6 +474,10 @@ display: block;
   background: var(--bg-color);
 
 }
+.possibilit-sec{
+  position: relative;
+  z-index: 11;
+}
 
 .possibilit-sec .section-titles{
   max-width: 720px;
