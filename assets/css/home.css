@@ -2900,6 +2900,11 @@ html[data-theme="dark"] .section-decor-two{
     padding: 8px 11px;
     font-size: 15px;
   }
+  .preserve-show-page {
+    max-width: calc(100% - 32px);
+  }
+
+
 }
 
 @media (max-width: 465px){
