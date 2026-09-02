@@ -2158,9 +2158,7 @@ html[data-theme="dark"] .section-decor-two{
     padding-bottom: 40px;
     margin: 0 auto;
   }
-  .faq-columns {
-    flex-direction: column;
-  }
+
   .trust-section {
     min-height: 759px;
   }

@@ -18,10 +18,6 @@ document.addEventListener('gestureend', function (e) {
 
 
 
-
-
-
-
 const reviewsItemsBlock = document.querySelector('.reviews-items');
 
 if (reviewsItemsBlock) {
@@ -551,6 +547,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+
+
+
+
+
+// =====-sideNav-tab--js-======
+
+
 document.addEventListener("DOMContentLoaded", function () {
   const HEADER_HEIGHT = 100;
 
@@ -627,7 +631,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+// =====-sideNav-tab--js-======
 
+
+
+// =====-Modal-tab--js-======
 
 
 $('.open_modal').on('click', function () {
@@ -670,23 +678,10 @@ $(window).on('click', function (event) {
   })
 });
 
+// =====-Modal-tab--js-======
 
 
-
-document.addEventListener("DOMContentLoaded", function () {
-  const heroGenerateElement = document.querySelector(".hero-generate");
-  const heroGenerateInputElement = heroGenerateElement?.querySelector("input");
-
-  if (!heroGenerateElement || !heroGenerateInputElement) return;
-
-  heroGenerateInputElement.addEventListener("focus", function () {
-    heroGenerateElement.classList.add("active");
-  });
-
-  heroGenerateInputElement.addEventListener("blur", function () {
-    heroGenerateElement.classList.remove("active");
-  });
-});
+// =====-sidenav-tab--js-======
 
 document.addEventListener("DOMContentLoaded", () => {
   const mobileSideNavBlock = document.querySelector(".side-nav-mobile");
@@ -888,38 +883,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  const templatesTabsWrapper = document.querySelector('.templates-tabs');
-  const templatesTabButtons = document.querySelectorAll('.templates-tabs button');
-  const templatesContentItems = document.querySelectorAll('.templates-items');
-  if (templatesTabsWrapper && templatesTabButtons.length && templatesContentItems.length) {
-    function setActiveTemplateTab(templateId) {
-      templatesTabButtons.forEach(function (singleTemplateButton) {
-        singleTemplateButton.classList.toggle(
-          'active',
-          singleTemplateButton.dataset.id === templateId
-        );
-      });
-      templatesContentItems.forEach(function (singleTemplateContent) {
-        if (singleTemplateContent.dataset.id === templateId) {
-          singleTemplateContent.style.display = 'grid'; 
-        } else {
-          singleTemplateContent.style.display = 'none';
-        }
-      });
-    }
-    const firstTemplateButton = templatesTabButtons[0];
-    const firstTemplateId = firstTemplateButton.dataset.id;
-    setActiveTemplateTab(firstTemplateId);
-    templatesTabButtons.forEach(function (singleTemplateButton) {
-      singleTemplateButton.addEventListener('click', function () {
-        const currentTemplateId = this.dataset.id;
-        setActiveTemplateTab(currentTemplateId);
-      });
-    });
-  }
-});
-
-document.addEventListener('DOMContentLoaded', function () {
   const customCategorySelect = document.querySelector('.c-categories-select');
   if (!customCategorySelect) return;
   const customCategoryHeader = customCategorySelect.querySelector('.c-select-header');
@@ -951,91 +914,8 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  const customCheckboxFilterLists = document.querySelectorAll('.checkbox-filters-list');
-  const customColorFilterLists = document.querySelectorAll('.color-filters-list');
-  const customResetAllButtons = document.querySelectorAll('.reset-all');
-  if (customCheckboxFilterLists.length) {
-    customCheckboxFilterLists.forEach(function (customCheckboxFilterList) {
-      const customCheckboxFilterItems = customCheckboxFilterList.querySelectorAll('li');
-      if (!customCheckboxFilterItems.length) return;
-      customCheckboxFilterItems.forEach(function (customCheckboxFilterItem) {
-        customCheckboxFilterItem.addEventListener('click', function () {
-          customCheckboxFilterItem.classList.toggle('active');
-        });
-      });
-    });
-  }
-  if (customColorFilterLists.length) {
-    customColorFilterLists.forEach(function (customColorFilterList) {
-      const customColorFilterItems = customColorFilterList.querySelectorAll('li');
-      if (!customColorFilterItems.length) return;
-      customColorFilterItems.forEach(function (customColorFilterItem) {
-        customColorFilterItem.addEventListener('click', function () {
-          customColorFilterItem.classList.toggle('active');
-        });
-      });
-    });
-  }
-  if (customResetAllButtons.length) {
-    customResetAllButtons.forEach(function (customResetAllButton) {
-      customResetAllButton.addEventListener('click', function () {
-        const customFiltersWrapper = customResetAllButton.closest('.catalog-filters-items');
-        if (!customFiltersWrapper) return;
-        const customActiveCheckboxItems = customFiltersWrapper.querySelectorAll('.checkbox-filters-list li.active');
-        const customActiveColorItems = customFiltersWrapper.querySelectorAll('.color-filters-list li.active');
-        customActiveCheckboxItems.forEach(function (customActiveCheckboxItem) {
-          customActiveCheckboxItem.classList.remove('active');
-        });
-        customActiveColorItems.forEach(function (customActiveColorItem) {
-          customActiveColorItem.classList.remove('active');
-        });
-      });
-    });
-  }
-});
 
 
-
-document.addEventListener('DOMContentLoaded', function () {
-  const catalogTabs = document.querySelectorAll('.catalog-tabs');
-  if (!catalogTabs.length) return;
-  catalogTabs.forEach(function (catalogTab) {
-    const buttons = catalogTab.querySelectorAll('button');
-    if (!buttons.length) return;
-    const allButton = buttons[0];
-    const categoryButtons = [...buttons].slice(1);
-    buttons.forEach(function (button) {
-
-      button.addEventListener('click', function () {
-
-        // Кнопка "Все шаблоны"
-        if (button === allButton) {
-
-          buttons.forEach(btn => {
-            btn.classList.remove('active');
-          });
-          allButton.classList.add('active');
-          return;
-        }
-        // Если нажали категорию
-        allButton.classList.remove('active');
-
-        button.classList.toggle('active');
-
-        // Проверяем есть ли активные категории
-        const hasActiveCategory = categoryButtons.some(btn =>
-            btn.classList.contains('active')
-        );
-
-        // Если ничего не выбрано — включаем "Все шаблоны"
-        if (!hasActiveCategory) {
-          allButton.classList.add('active');
-        }
-      });
-    });
-  });
-});
 
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -1049,74 +929,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
-document.addEventListener('DOMContentLoaded', function () {
-  const customTemplateModal = document.querySelector('.template-description-modal');
-  const customTemplateModalWrapper = document.querySelector('.template-modal-wrapper');
-  const customTemplateModalClose = document.querySelector('.template-modal-wrapper .icon-close');
-  const customCatalogItems = document.querySelectorAll('.catalog-item');
 
-  if (!customTemplateModal || !customTemplateModalWrapper || !customCatalogItems.length) return;
-  customCatalogItems.forEach(function (customCatalogItem) {
-    customCatalogItem.addEventListener('click', function (e) {
-      e.preventDefault();
-      customTemplateModal.classList.add('active');
-      document.body.style.overflow = 'hidden'
-    });
-  });
-  if (customTemplateModalClose) {
-    customTemplateModalClose.addEventListener('click', function () {
-      customTemplateModal.classList.remove('active');
-      document.body.style.overflow = 'unset'
-    });
-  }
-  customTemplateModal.addEventListener('click', function (e) {
-    if (!customTemplateModalWrapper.contains(e.target)) {
-      customTemplateModal.classList.remove('active');
-      document.body.style.overflow = 'unset'
-    }
-  });
-});
-document.addEventListener('DOMContentLoaded', function () {
-  const customTemplateModalMediaBlocks = document.querySelectorAll('.template-modal-media');
-  if (!customTemplateModalMediaBlocks.length) return;
-  customTemplateModalMediaBlocks.forEach(function (customTemplateModalMedia) {
-    const customTemplateMainImage = customTemplateModalMedia.querySelector('.t-modal-main-img img');
-    const customTemplatePreviewItems = customTemplateModalMedia.querySelectorAll('.t-modal-img');
-
-    if (!customTemplateMainImage || !customTemplatePreviewItems.length) return;
-
-    const customTemplateFirstPreview = customTemplateModalMedia.querySelector('.t-modal-img.active') || customTemplatePreviewItems[0];
-
-    if (customTemplateFirstPreview) {
-      const customTemplateFirstImageSrc = customTemplateFirstPreview.getAttribute('data-modal-img');
-
-      customTemplatePreviewItems.forEach(function (item) {
-        item.classList.remove('active');
-      });
-
-      customTemplateFirstPreview.classList.add('active');
-
-      if (customTemplateFirstImageSrc) {
-        customTemplateMainImage.src = customTemplateFirstImageSrc;
-      }
-    }
-    customTemplatePreviewItems.forEach(function (customTemplatePreviewItem) {
-      customTemplatePreviewItem.addEventListener('click', function () {
-        const customTemplateNewImageSrc = customTemplatePreviewItem.getAttribute('data-modal-img');
-
-        customTemplatePreviewItems.forEach(function (item) {
-          item.classList.remove('active');
-        });
-
-        customTemplatePreviewItem.classList.add('active');
-
-        if (customTemplateNewImageSrc) {
-          customTemplateMainImage.src = customTemplateNewImageSrc;
-        }
-      });
-    });
-  });
-});
 document.addEventListener("DOMContentLoaded", function () {
   const tabsWrapper = document.querySelector(".slidy-catalog__tabs");
   const toggleButton = document.querySelector(".c-show-all");
@@ -1290,136 +1103,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-$('.collection-more').on('click', function (e) {
-  $(this).addClass('collection-more-none')
-  $('.collect-cnt-wrap').addClass('collect-cnt-opened')
-})
-
-$('.more-prompts').on('click', function (e) {
-  $(this).addClass('more-prompts-none')
-  $('.prompts-catalog-wrap').addClass('prompts-catalog-opened')
-})
-
-
-let rating = 0;
-
-$('.this-star').hover(
-    function () {
-      const index = $(this).index();
-
-      $('.this-star').removeClass('hover');
-
-      $('.this-star').each(function (i) {
-        if (i <= index) {
-          $(this).addClass('hover');
-        }
-      });
-    },
-    function () {
-      $('.this-star').removeClass('hover');
-    }
-);
-
-$('.this-star').on('click', function () {
-  rating = $(this).index() + 1;
-
-  $('.this-star').removeClass('this-star-act');
-
-  $('.this-star').each(function (i) {
-    if (i < rating) {
-      $(this).addClass('this-star-act');
-    }
-  });
-});
-
-$('.like-messages').on('click', function (e) {
-  $(this).toggleClass('like-messages-act');
-})
-
-$('.select-rew').on('click', function (e) {
-  $(this).toggleClass('select-active');
-})
-
-
-$('.more-starting-box').on('click', function (e) {
-  $(this).addClass('more-starting-none')
-  $('.author-topic').addClass('author-topic-opened')
-})
 
 
 
 
-document.querySelectorAll('.for-copy').forEach(button => {
-  button.addEventListener('click', function (e) {
-    e.preventDefault();
-    e.stopPropagation();
-
-    const card = this.closest('.prompts-catalog-box');
-
-    const text = card.querySelector('.prompt-name-text p').innerText;
-
-    navigator.clipboard.writeText(text);
-  });
-});
 
 
 
-
-document.addEventListener('DOMContentLoaded', () => {
-  const menuLinks = document.querySelectorAll('.methods-menu a');
-  // Плавный скролл при клике
-  menuLinks.forEach(link => {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('href');
-      const targetBlock = document.querySelector(targetId);
-      if (targetBlock) {
-        const offset = 120;
-        const targetPosition =
-            targetBlock.getBoundingClientRect().top +
-            window.pageYOffset -
-            offset;
-
-        window.scrollTo({
-          top: targetPosition,
-          behavior: 'smooth'
-        });
-      }
-    });
-  });
-  // Активный пункт при скролле
-  const sections = [];
-  menuLinks.forEach(link => {
-    const id = link.getAttribute('href');
-    const section = document.querySelector(id);
-    if (section) {
-      sections.push({
-        link,
-        section
-      });
-    }
-  });
-
-  function setActiveMenu() {
-    let currentSection = null;
-    sections.forEach(item => {
-      const rect = item.section.getBoundingClientRect();
-      // Когда блок дошёл до экрана
-      if (rect.top <= 350) {
-        currentSection = item;
-      }
-    });
-    if (currentSection) {
-      menuLinks.forEach(link => {
-        link.classList.remove('active');
-      });
-      currentSection.link.classList.add('active');
-    }
-  }
-  // Первый активный сразу
-  setActiveMenu();
-  window.addEventListener('scroll', setActiveMenu);
-});
 
 
 
@@ -1452,7 +1142,3 @@ if (fileInput && fileName) {
 
 
 
-
-$('.for-copy').on('click', function () {
-  $(this).addClass('for-copy-active');
-})

@@ -976,13 +976,9 @@
 }
 
 
-
-
-
 .trust-ready-team{
     margin-top: 0;
 }
-
 
 
 
@@ -1004,8 +1000,6 @@
     .about-present-flex {
         gap: 20px;
     }
-
-
 
     .framework-boxes .section-titles {
         max-width: 606px;
@@ -1200,17 +1194,12 @@
         padding: 20px;
         border-radius: 12px;
     }
-
     .about-present-flex {
         gap: 20px;
     }
-
-
     .reviews-rating-title h2 span {
         font-size: 20px;
     }
-
-
     .verified-names{
         flex-direction: column;
         align-items: flex-start;
