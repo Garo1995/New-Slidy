@@ -11,7 +11,9 @@ document.addEventListener('gestureend', function (e) {
 });
 
 
-
+$('.close-preserve').on('click', function (e) {
+  $('.preserve-show-page').addClass('close-banner');
+})
 
 
 
