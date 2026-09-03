@@ -3786,11 +3786,11 @@ html[data-theme="dark"] .pointsDark-title{
     height: auto;
 
   }
-  .catalog-filters-items{
-    max-height: 400px;
-    padding: 0 14px;
-  }
 
+  .catalog-filters-items {
+    max-height: 480px;
+    padding: 0 14px 0;
+  }
   .life-examples-box {
     flex-direction: column;
     gap: 40px;
