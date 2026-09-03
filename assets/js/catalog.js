@@ -169,41 +169,63 @@
 
 
 
+(function () {
+    let startY = 0;
+    let endY = 0;
+    let isDragging = false;
+    const threshold = 50;
 
-let startY = 0;
-let endY = 0;
-let threshold = 50;
-let canClose = false;
+    // Открытие модалки
+    $(document).on('click', '.open-estate-filter', function (e) {
+        e.stopPropagation(); // чтобы этот же клик не закрыл модалку через глобальный обработчик
+        $(this).toggleClass('active');
+        $('.catalog-filters-main').toggleClass('touchstart-open');
+        $('body').toggleClass('body-fon');
+    });
 
-$('.touchstart').on('touchstart', function (e) {
-    const isDragZone = $(e.target).closest('.modal-drag-zone').length > 0;
+    // Закрытие по клику ГДЕ УГОДНО вне модалки (глобально, а не только внутри .touchstart)
+    $(document).on('click', function (e) {
+        const $modal = $('.catalog-filters-main.touchstart-open');
+        if (!$modal.length) return; // модалка не открыта — ничего не делаем
 
-    canClose = isDragZone;
-    startY = e.originalEvent.touches[0].clientY;
-});
+        const clickedInsideModal = $(e.target).closest('.catalog-filters-wrapper').length > 0;
+        const clickedOpenBtn = $(e.target).closest('.open-estate-filter').length > 0;
 
-$('.touchstart').on('touchmove', function (e) {
-    endY = e.originalEvent.touches[0].clientY;
-});
+        if (!clickedInsideModal && !clickedOpenBtn) {
+            closeModal($modal);
+        }
+    });
 
-$('.touchstart').on('touchend', function () {
+    // Свайп вниз за drag-zone для закрытия
+    $(document).on('touchstart', '.touchstart', function (e) {
+        const isDragZone = $(e.target).closest('.modal-drag-zone').length > 0;
+        isDragging = isDragZone;
+        startY = e.originalEvent.touches[0].clientY;
+        endY = startY;
+    });
 
-    if (!canClose) return;
+    $(document).on('touchmove', '.touchstart', function (e) {
+        if (!isDragging) return;
+        endY = e.originalEvent.touches[0].clientY;
+    });
 
-    if (endY - startY > threshold) {
-        $(this).removeClass('touchstart-open');
-        $('body').removeClass('body-fon modal-open');
-        $('.modal-overlay').removeClass('active');
+    $(document).on('touchend', '.touchstart', function () {
+        if (!isDragging) return;
+
+        if (endY - startY > threshold) {
+            closeModal($(this));
+        }
+
+        isDragging = false;
+        startY = 0;
+        endY = 0;
+    });
+
+    function closeModal($modal) {
+        $modal.removeClass('touchstart-open');
+        $('body').removeClass('body-fon');
         $('.select-property').removeClass('select-property-open');
         $('.open-estate-filter').removeClass('active');
     }
-});
-
-
-$('.open-estate-filter').on('click', function () {
-    $(this).toggleClass('active');
-    $('.catalog-filters-main').toggleClass('touchstart-open');
-    $('body').addClass('body-fon');
-
-})
+})();
 

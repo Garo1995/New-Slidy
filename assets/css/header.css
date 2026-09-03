@@ -286,6 +286,9 @@ header.moved {
     header {
         padding: 14px 0;
     }
+    header.moved {
+        padding: 14px 0;
+    }
     .header-logo {
         margin-left: 4px;
         max-width: 75px;

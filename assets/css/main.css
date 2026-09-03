@@ -3742,6 +3742,10 @@ html[data-theme="dark"] .pointsDark-title{
     gap: 0;
   }
   .catalog-filters-main{
+    display: block;
+
+  }
+  .touchstart{
     max-width: 500px;
     position: fixed;
     width: 100%;
@@ -3750,7 +3754,7 @@ html[data-theme="dark"] .pointsDark-title{
     left: 50%;
     border-radius: 1.5rem 1.5rem 0 0; /* 24px */
     transform: translateY(130%) translateX(-50%);
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
     z-index: 9992;
     background: var(--bg-color);
   }
