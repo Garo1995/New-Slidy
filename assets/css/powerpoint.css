@@ -1,6 +1,5 @@
 .power-main{
     background-color: var(--main-container7);
-    padding: 25px 0 0;
     position: relative;
 }
 
@@ -210,26 +209,10 @@
 
 
 
-
-
-
-
-
 .technologies-main{
     position: relative;
     width: 100%;
     padding: 80px 0 200px;
-}
-.technologies-main:before{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-image: url("../images/technologies.webp");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 80%;
 }
 
 .technologies-main .section-title{
@@ -716,13 +699,12 @@
     }
 
 
-    .power-main {
-        padding: 68px 0 0;
+
+
+    .logo-tumbler{
+        width: 53px;
+        height: 32px;
     }
-
-
-
-
 
 
 
@@ -952,9 +934,6 @@
         left: 65px;
     }
 
-    .power-main {
-        padding: 22px 0 0;
-    }
 
 
 }

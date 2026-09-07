@@ -927,8 +927,9 @@ strong {
   z-index: -1;
   height: 100%;
 }
+
 .hero-bg img {
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
   height: 100%;
 }
@@ -949,20 +950,33 @@ strong {
   width: 100%;
   align-items: center;
   justify-content: center;
+  height: 400px;
+
 }
 .hero-ellipse img {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  object-position: top;
 }
 
 
 
+@media (max-width: 1980px) {
+  .hero-ellipse {
+    height: 300px;
+  }
+  .hero-bg img {
+    object-fit: cover;
+  }
+}
 @media (max-width: 1599px) {
   .hero-bg {
     height: auto;
   }
-
+  .hero-ellipse {
+    height: 400px;
+  }
 }
 
 @media (max-width: 1220px){
@@ -1218,10 +1232,8 @@ strong {
   height: 100px;
 }
 .compare-bg img {
-  object-fit: cover;
   width: 100%;
   height: 100%;
-  object-position: center;
 }
 
 
@@ -1246,7 +1258,10 @@ strong {
 
 
 @media (max-width: 767px) {
-
+  .compare-bg img {
+    object-fit: cover;
+    object-position: center;
+  }
   .compare-head {
     display: none;
   }
@@ -1804,7 +1819,12 @@ html[data-theme="dark"] .pointsDark-title{
 }
 .linking-card-bg img{
   width: 100%;
-  height: 100%;
+  object-fit: contain;
+}
+@media (max-width: 1980px){
+  .linking-card-bg img{
+    object-fit: unset;
+  }
 }
 
 .linking-card .section-tag span {
@@ -2195,7 +2215,13 @@ html[data-theme="dark"] .pointsDark-title{
 }
 .power-bg img{
   width: 100%;
-  height: 100%;
+  object-fit: contain;
+}
+@media(max-width: 1980px){
+  .power-bg img{
+    width: 100%;
+    object-fit: unset;
+  }
 }
 .power-bg-mobile{
   display: none;
@@ -3689,12 +3715,9 @@ html[data-theme="dark"] .pointsDark-title{
   .power-cnt .fisrt-section-titles i {
     width: 54px;
   }
+
   .power-bg img {
     object-fit: cover;
-  }
-  .power-bg {
-    top: 58px;
-    height: 568px;
   }
 
 
@@ -3901,7 +3924,10 @@ html[data-theme="dark"] .pointsDark-title{
     display: flex;
   }
 
-
+  .power-bg {
+    top: 51px;
+    height: 720px;
+  }
 
 
 
@@ -4244,7 +4270,7 @@ html[data-theme="dark"] .pointsDark-title{
 
   .power-bg {
     top: 0;
-    height: auto;
+    height: 840px;
   }
 
 
