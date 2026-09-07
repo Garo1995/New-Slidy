@@ -74,6 +74,7 @@ header.moved {
     -webkit-backdrop-filter: blur(10px);
     background: #00000066;
     padding: 50px 14px;
+    display: none;
 }
 .language-modal.active {
     opacity: 1;
