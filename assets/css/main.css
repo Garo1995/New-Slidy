@@ -2444,7 +2444,7 @@ html[data-theme="dark"] .pointsDark-title{
 
 
 .trust-btn {
-  margin: 28px auto 0;
+  margin: 20px auto 0;
 }
 
 
@@ -3612,6 +3612,79 @@ html[data-theme="dark"] .pointsDark-title{
 
 
 
+
+
+
+
+.error-page{
+  height: 780px;
+  padding: 148px 0 30px;
+}
+
+.error-page .section-titles {
+  position: relative;
+  z-index: 5;
+
+}
+.error-page .section-sub-title {
+  max-width: 620px;
+  width: 100%;
+
+}
+
+.error-page-fon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+}
+.error-page-fon img{
+  width: 100%;
+}
+
+@media (max-width: 1399px){
+  .error-page-fon {
+    height: 100%;
+  }
+
+}
+@media (max-width: 1199px){
+  .error-page{
+    height: 680px;
+  }
+}
+@media (max-width: 767px){
+  .error-page{
+    height: 780px;
+    padding: 110px 0 10px;
+  }
+
+}
+@media (max-width: 575px){
+  .error-page-title{
+    width: 100%;
+  }
+  .error-page .section-big-title {
+    font-size: 30px;
+    line-height: 34px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 0 6px;
+  }
+  .error-page .section-big-title img{
+    width: 62px;
+    height: 34px;
+  }
+}
+
+
+
+
+
+
+
 @media (max-width: 1700px) {
   .hero-ellipse {
     bottom: -60px;
@@ -4300,7 +4373,7 @@ html[data-theme="dark"] .pointsDark-title{
     display: none;
   }
   .trust-btn {
-    margin: 24px auto 0;
+    margin: 16px auto 0;
   }
 
   .edits-item-circle {
