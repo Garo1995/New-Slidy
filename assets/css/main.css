@@ -3617,7 +3617,7 @@ html[data-theme="dark"] .pointsDark-title{
 
 
 .error-page{
-  height: 100vh;
+  height: 100dvh;
   padding: 148px 0 30px;
 }
 
@@ -3643,19 +3643,15 @@ html[data-theme="dark"] .pointsDark-title{
 .error-page-fon img{
   width: 100%;
 }
-
-@media (max-width: 1399px){
-  .error-page-fon {
-    height: 100%;
+@media (max-height: 500px) {
+  .error-page-fon img{
+    object-fit: cover;
   }
-
 }
-
 @media (max-width: 767px){
   .error-page{
     padding: 110px 0 10px;
   }
-
 }
 @media (max-width: 575px){
   .error-page-title{
