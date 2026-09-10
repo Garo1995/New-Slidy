@@ -544,72 +544,6 @@ display: block;
 
 
 
-.possibilit-box{
-  margin: 32px auto 0;
-  max-width: 680px;
-  border-radius: 16px;
-  padding: 24px;
-  width: 100%;
-  box-shadow: 0px 10px 28px 0px #122E6614;
-  border: 1px solid var(--border3);
-  background: var(--bg-color);
-
-}
-.possibilit-sec{
-  position: relative;
-  z-index: 11;
-}
-
-.possibilit-sec .section-titles{
-  max-width: 720px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.possibilit-form{
-  position: relative;
-  width: 100%;
-}
-.possibilit-form textarea{
-  resize: none;
-  width: 100%;
-  padding: 19px 120px 20px 19px;
-  border: 1px solid var(--border);
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  color: var(--border2);
-  background: unset;
-  border-radius: 10px;
-}
-.possibilit-form textarea::placeholder{
-  color: var(--border2);
-}
-.possibilit-btn {
-  position: absolute;
-  right: 20px;
-  gap: 10px;
-}
-.btn-create {
-  padding: 12px 15px;
-}
-.btn-create span{
-  display: none;
-}
-.btn-create i{
-  font-size: 18px;
-}
-.possibilit-btn .icon-stars{
-    background: var(--accent-color);
-  font-size: 22px;
-}
-
-.possibilit-svg{
-  margin-bottom: -45px;
-}
-.possibilit-mob{
-  display: none;
-}
 .sm-text-primary{
   font-weight: 500;
   font-size: 14px;
@@ -619,36 +553,6 @@ display: block;
   display: block;
   margin-top: 16px;
 }
-
-.possibilit-card{
-  background: var(--bg-card);
-  width: 100%;
-  gap: 24px;
-  padding: 12px 12px 14px 12px;
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid var(--primary-cont);
-}
-.possibilit-photo{
-  width: 100%;
-  gap: 12px;
-
-}
-.possibilit-photo img{
-  width: 100%;
-  border-radius: 12px;
-}
-.possibilit-photo span{
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: var(--accent-color);
-
-}
-
-
 
 
 
@@ -1472,72 +1376,7 @@ html[data-theme="dark"] .section-decor-two{
   color: var(--text-color5);
 }
 
-.trust-section {
-  margin-top: 80px;
-  position: relative;
-  z-index: 99;
-  display: flex;
-  padding-top: 70px;
-  padding-bottom: 50px;
-}
-.trust-fon{
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-  width: 100%;
-}
-.trust-fon img{
-  width: 100%;
-  height: 211px;
-}
-.trust-left-pic{
-  display: flex;
-  position: absolute;
-  top: 70px;
-  left: 36px;
-  max-width: 454px;
-  width: 100%;
-}
-.trust-right-pic{
-  display: flex;
-  position: absolute;
-  max-width: 581px;
-  right: 0;
-  bottom: -3px;
-}
-.trast-star{
-  display: flex;
-  position: absolute;
-  width: 169px;
-  top: 168px;
-  right: 169px;
-}
-.trust-bg {
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-  width: 100%;
-  z-index: -1;
-  display: flex;
-  height: 100%;
-}
-.trust-bg img {
-  width: 100%;
-  height: 100%;
-}
-.trust-left-right{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 0;
-  height: 100%;
-  width: 100%;
-  max-width: 1440px;
-}
 
-.trust-decor {
-  display: none;
-}
 
 .language-sub-scroll {
   max-height: 200px;
@@ -1569,20 +1408,6 @@ html[data-theme="dark"] .section-decor-two{
 
 
 
-.section-titles .btn-start{
-  margin: 12px 0;
-}
-
-.trust-section .possibilit-box{
-  border: 1px solid var(--border);
-}
-
-.possibilit-box h4{
-  text-align: left;
-  font-size: 20px;
-  width: 100%;
-  margin-bottom: 16px;
-}
 
 
 
@@ -1590,10 +1415,8 @@ html[data-theme="dark"] .section-decor-two{
 
 
 
-.trust-body{
-  position: relative;
-  z-index: 5;
-}
+
+
 
 
 
@@ -1809,21 +1632,7 @@ html[data-theme="dark"] .section-decor-two{
     min-height: 1090px;
   }
 }
-@media (max-width: 1399px){
-  .trust-left-pic {
-    left: 0;
-    max-width: 389px;
-  }
-  .trust-right-pic {
-    max-width: 500px;
-    bottom: 43px;
-  }
-  .trast-star {
-    width: 138px;
-    top: 197px;
-    right: 153px;
-  }
-}
+
 
 
 @media (max-width: 1200px) {
@@ -1967,18 +1776,7 @@ html[data-theme="dark"] .section-decor-two{
     bottom: 95px;
     right: -40px;
   }
-  .trust-left-pic {
-    max-width: 329px;
-  }
-  .trust-right-pic {
-    max-width: 400px;
-    bottom: 108px;
-  }
-  .trast-star {
-    width: 132px;
-    top: 204px;
-    right: 107px;
-  }
+
 
 
 }
@@ -2052,16 +1850,7 @@ html[data-theme="dark"] .section-decor-two{
   .hero-task-name:nth-child(2) {
     top: 104px;
   }
-  .possibilit-svg{
-    margin-bottom: 0;
-    justify-content: center;
-  }
-  .possibilit-desc{
-    display: none;
-  }
-  .possibilit-mob{
-    display: block;
-  }
+
   .task-menu ul li {
     padding: 10px 14px;
     font-size: 14px;
@@ -2071,10 +1860,7 @@ html[data-theme="dark"] .section-decor-two{
     flex-wrap: wrap;
     gap: 24px;
   }
-  .section-titles {
-    gap: 8px;
-    margin-bottom: 24px;
-  }
+
   .gallery-search {
     max-width: 480px;
   }
@@ -2184,18 +1970,7 @@ html[data-theme="dark"] .section-decor-two{
 
   }
 
-  .trust-left-right{
-    display: none;
-  }
 
-
-  .trust-fon{
-    display: none;
-  }
-  .trust-section {
-    margin-top: 51px;
-    padding-top: 50px;
-  }
 }
 
 
@@ -2213,9 +1988,6 @@ html[data-theme="dark"] .section-decor-two{
     display: none;
   }
 
-  .trust-bg img {
-    object-fit: cover;
-  }
 
 
 
@@ -2360,38 +2132,7 @@ html[data-theme="dark"] .section-decor-two{
     position: absolute;
     bottom: 20px;
   }
-  .possibilit-box {
-    margin: 24px auto 0;
-    border-radius: 12px;
-    padding: 20px;
-  }
-  .possibilit-form {
-    flex-direction: column;
-    gap: 16px;
-  }
-  .possibilit-form textarea {
-    padding: 12px;
-    font-size: 16px;
-    line-height: 20px;
-  }
 
-  .possibilit-btn {
-    position: relative;
-    right: 0;
-    gap: 0;
-    max-width: 380px;
-    width: 100%;
-  }
-  .possibilit-btn .icon-stars{
-    display: none;
-
-  }
-  .possibilit-btn .btn-start{
-    width: 100%;
-  }
-  .btn-create span {
-    display: flex;
-  }
   .card-gallery-info h4 {
     font-size: 18px;
     line-height: 20px;
@@ -2561,9 +2302,7 @@ html[data-theme="dark"] .section-decor-two{
     pointer-events: none;
   }
 
-  .possibilit-form textarea {
-    min-height: 88px;
-  }
+
   .side-nav-mobile ul a {
     white-space: nowrap;
     font-weight: 500;
@@ -2610,10 +2349,7 @@ html[data-theme="dark"] .section-decor-two{
   }
 
 
-  .possibilit-card {
-    max-width: 400px;
-    margin: 0 auto;
-  }
+
   .hero-section {
     padding: 112px 0 0;
   }
@@ -2716,9 +2452,7 @@ html[data-theme="dark"] .section-decor-two{
     min-height: 1130px;
   }
 
-  .possibilit-card {
-    gap: 16px;
-  }
+
 
   #efficiency .desktop-block {
     display: block;
@@ -2780,31 +2514,7 @@ html[data-theme="dark"] .section-decor-two{
     margin-bottom: 24px;
   }
 
-  .trust-decor {
-    position: absolute;
-    top: 0;
-    max-width: 680px;
-    left: 0;
-    display: flex;
-    z-index: -1;
-  }
-  .trust-decor img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .trust-bg img {
-    object-position: bottom;
-  }
-  .trust-body .advanced-title-img i {
-    width: 53px;
-    height: 32px;
-  }
 
-
-  .trust-body {
-    padding: 0;
-  }
 
   .reviews-item {
     min-height: 370px;
@@ -2865,20 +2575,13 @@ html[data-theme="dark"] .section-decor-two{
   .efficiency{
     padding-bottom: 30px;
   }
-  .possibilit-box h4 {
-    font-size: 18px;
-  }
+
 
 
   .task-menu {
     width: 100%;
   }
-  .trust-body .btn-start{
-    display: none;
-  }
-  .trust-body .card-data{
-    display: none;
-  }
+
   .statistics-item {
     padding: 18px 20px;
   }
@@ -2891,9 +2594,7 @@ html[data-theme="dark"] .section-decor-two{
   .statistics-time {
     margin-top: 11px;
   }
-  .trust-body .section-sub-title .desktop-block {
-    display: unset;
-  }
+
 
   #statistics .text-wrap {
     display: unset;
