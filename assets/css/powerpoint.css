@@ -1,6 +1,9 @@
 .power-main{
     background-color: var(--main-container7);
     position: relative;
+    height: 800px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 
@@ -606,13 +609,11 @@
 
 
 
-@media (max-width: 1360px){
-
-
-}
 
 @media (max-width: 1199px){
-
+    .power-main {
+        height: 680px;
+    }
 
     .slidy-speeds-rel {
         margin: 32px auto 0;
@@ -745,8 +746,13 @@
     .save-slidy-data sub {
         height: 20px;
     }
-
-
+    .power-image img{
+        object-fit: cover;
+        height: 320px;
+    }
+    .power-fon img {
+        height: 41px;
+    }
 
 
 
@@ -835,6 +841,21 @@
     }
     .slidy-turns-main {
         overflow: hidden;
+    }
+    .power-fon img {
+        height: 20px;
+    }
+    .power-main {
+        height: 840px;
+    }
+    .power-image img {
+        object-fit: unset;
+        height: 396px;
+        width: 100%;
+    }
+    .power-image {
+        left: 0;
+        transform: unset;
     }
 
 

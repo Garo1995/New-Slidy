@@ -822,10 +822,7 @@ strong {
   .desktop-text-wrap {
     display: unset;
   }
-  .compare-col--accent {
 
-    width: 176px;
-  }
   .reviews-btn {
     margin-top: 24px;
     gap: 12px;
@@ -929,7 +926,6 @@ strong {
 }
 
 .hero-bg img {
-  object-fit: contain;
   width: 100%;
   height: 100%;
 }
@@ -966,9 +962,7 @@ strong {
   .hero-ellipse {
     height: 300px;
   }
-  .hero-bg img {
-    object-fit: cover;
-  }
+
 }
 @media (max-width: 1599px) {
   .hero-bg {
@@ -1273,7 +1267,7 @@ strong {
     width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
   }
 
   .compare-col {
@@ -1343,8 +1337,8 @@ strong {
 
 @media (max-width: 576px){
 
-  .compare-col--accent {
-    width: 160px;
+  .compare-col {
+    width: 100%;
   }
   .compare-name-desc{
     display: none;
@@ -1352,8 +1346,13 @@ strong {
   .compare-name-mob{
     display: block;
   }
+  .compare-col--accent {
+    width: 153px;
+  }
+  .compare-col--other{
+    width: 153px;
 
-
+  }
 
 }
 
@@ -1786,16 +1785,17 @@ html[data-theme="dark"] .pointsDark-title{
   background-repeat: no-repeat;
 }
 
-.linking-card{
+
+.linking-card {
   position: relative;
   background: #161616;
   margin-top: 100px;
+  padding-top: 20px;
+  min-height: 604px;
 }
 .linking-card-info{
-  position: absolute;
-  left: 0;
+  position: relative;
   width: 100%;
-  top: 10px;
   z-index: 3;
 }
 .linking-card-info .btn-black{
@@ -1811,7 +1811,7 @@ html[data-theme="dark"] .pointsDark-title{
 
 
 .linking-card-bg {
-  position: relative;
+  position: absolute;
   left: 0;
   bottom: -1px;
   width: 100%;
@@ -1819,12 +1819,18 @@ html[data-theme="dark"] .pointsDark-title{
 }
 .linking-card-bg img{
   width: 100%;
-  object-fit: contain;
 }
-@media (max-width: 1980px){
-  .linking-card-bg img{
-    object-fit: unset;
-  }
+.linking-imgs{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1520px;
+  width: 100%;
+  height: 100%;
+}
+.linking-imgs img{
+  width: 100%;
 }
 
 .linking-card .section-tag span {
@@ -1846,9 +1852,19 @@ html[data-theme="dark"] .pointsDark-title{
 
 
 
-
-
-
+@media (max-width: 1599px){
+  .linking-imgs img {
+    object-fit: cover;
+    height: 656px;
+  }
+  .linking-imgs {
+    top: 46px;
+    max-width: 1520px;
+    height: auto;
+    left: 0;
+    transform: unset;
+  }
+}
 
 
 
@@ -2208,29 +2224,41 @@ html[data-theme="dark"] .pointsDark-title{
 
 
 .power-bg{
-  position: relative;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;
+  height: 100%;
 }
 .power-bg img{
   width: 100%;
-  object-fit: contain;
 }
-@media(max-width: 1980px){
-  .power-bg img{
-    width: 100%;
-    object-fit: unset;
-  }
-}
+
 .power-bg-mobile{
   display: none;
 }
-.power-info{
+.power-image{
   position: absolute;
-  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 1440px;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+}
+.power-info{
+  width: 100%;
+}
+.power-fon{
+    position: absolute;
+  bottom: -2px;
   left: 0;
   width: 100%;
+  display: flex;
+}
+.power-fon img{
+  width: 100%;
+  height: 90px;
 }
 
 .power-cnt{
@@ -3690,9 +3718,7 @@ html[data-theme="dark"] .pointsDark-title{
   .life-examples-info {
     padding: 20px;
   }
-  .power-bg {
-    top: 51px;
-  }
+
 }
 
 @media (max-width: 1200px){
@@ -3709,10 +3735,7 @@ html[data-theme="dark"] .pointsDark-title{
     font-size: 36px;
     line-height: 40px;
   }
-  .linking-card-bg img{
-    object-fit: cover;
-    height: auto;
-  }
+
 
 
   .life-examples {
@@ -3781,9 +3804,7 @@ html[data-theme="dark"] .pointsDark-title{
     width: 54px;
   }
 
-  .power-bg img {
-    object-fit: cover;
-  }
+
 
 
 
@@ -3989,10 +4010,7 @@ html[data-theme="dark"] .pointsDark-title{
     display: flex;
   }
 
-  .power-bg {
-    top: 51px;
-    height: 720px;
-  }
+
 
 
 
@@ -4044,6 +4062,10 @@ html[data-theme="dark"] .pointsDark-title{
 
   .mobile-block {
     display: flex;
+  }
+
+  .linking-imgs{
+    display: none;
   }
 
 }
@@ -4243,9 +4265,7 @@ html[data-theme="dark"] .pointsDark-title{
     width: 53px;
     height: auto;
   }
-  .linking-card-info {
-    top: 100px;
-  }
+
   .linking-card {
     margin-top: 20px;
   }
@@ -4305,7 +4325,7 @@ html[data-theme="dark"] .pointsDark-title{
     gap: 12px;
     flex-direction: column;
     width: 100%;
-    max-width: 550px;
+    max-width: 450px;
   }
   .linking-card .linking-card-bg img{
     height: 600px;
@@ -4333,10 +4353,7 @@ html[data-theme="dark"] .pointsDark-title{
   }
 
 
-  .power-bg {
-    top: 0;
-    height: 840px;
-  }
+
 
 
 
@@ -4540,10 +4557,6 @@ html[data-theme="dark"] .pointsDark-title{
 
 @media (max-width: 410px) {
 
-  .power-bg {
-    top: 0;
-    height: auto;
-  }
   .linking-card .linking-card-bg img{
     height: auto;
   }

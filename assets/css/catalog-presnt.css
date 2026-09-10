@@ -1006,8 +1006,8 @@ html[data-theme="dark"] .filter-category:after{
         gap: 18px;
     }
     .choose-name h3 {
-        font-size: 28px;
-        line-height: 28px;
+        font-size: 20px;
+        line-height: 20px;
     }
     .popular-arrow {
         max-width: 52px;

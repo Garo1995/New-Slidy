@@ -1473,13 +1473,44 @@ html[data-theme="dark"] .section-decor-two{
 }
 
 .trust-section {
-  margin-top: 100px;
+  margin-top: 80px;
   position: relative;
-  min-height: 800px;
   z-index: 99;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+.trust-fon{
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+}
+.trust-fon img{
+  width: 100%;
+  height: 211px;
+}
+.trust-left-pic{
+  display: flex;
+  position: absolute;
+  top: 70px;
+  left: 36px;
+  max-width: 454px;
+  width: 100%;
+}
+.trust-right-pic{
+  display: flex;
+  position: absolute;
+  max-width: 581px;
+  right: 0;
+  bottom: -3px;
+}
+.trast-star{
+  display: flex;
+  position: absolute;
+  width: 169px;
+  top: 168px;
+  right: 169px;
 }
 .trust-bg {
   position: absolute;
@@ -1487,10 +1518,21 @@ html[data-theme="dark"] .section-decor-two{
   bottom: -2px;
   width: 100%;
   z-index: -1;
+  display: flex;
+  height: 100%;
 }
 .trust-bg img {
   width: 100%;
   height: 100%;
+}
+.trust-left-right{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  height: 100%;
+  width: 100%;
+  max-width: 1440px;
 }
 
 .trust-decor {
@@ -1767,6 +1809,21 @@ html[data-theme="dark"] .section-decor-two{
     min-height: 1090px;
   }
 }
+@media (max-width: 1399px){
+  .trust-left-pic {
+    left: 0;
+    max-width: 389px;
+  }
+  .trust-right-pic {
+    max-width: 500px;
+    bottom: 43px;
+  }
+  .trast-star {
+    width: 138px;
+    top: 197px;
+    right: 153px;
+  }
+}
 
 
 @media (max-width: 1200px) {
@@ -1909,6 +1966,18 @@ html[data-theme="dark"] .section-decor-two{
   .task-three .hero-task-name:nth-child(4) {
     bottom: 95px;
     right: -40px;
+  }
+  .trust-left-pic {
+    max-width: 329px;
+  }
+  .trust-right-pic {
+    max-width: 400px;
+    bottom: 108px;
+  }
+  .trast-star {
+    width: 132px;
+    top: 204px;
+    right: 107px;
   }
 
 
@@ -2115,8 +2184,18 @@ html[data-theme="dark"] .section-decor-two{
 
   }
 
+  .trust-left-right{
+    display: none;
+  }
 
 
+  .trust-fon{
+    display: none;
+  }
+  .trust-section {
+    margin-top: 51px;
+    padding-top: 50px;
+  }
 }
 
 
@@ -2275,9 +2354,7 @@ html[data-theme="dark"] .section-decor-two{
     margin: 0 auto;
   }
 
-  .trust-section {
-    min-height: 759px;
-  }
+
 
   .reviews-data {
     position: absolute;
@@ -2703,10 +2780,6 @@ html[data-theme="dark"] .section-decor-two{
     margin-bottom: 24px;
   }
 
-  .trust-section {
-    min-height: 550px;
-    margin-top: 80px;
-  }
   .trust-decor {
     position: absolute;
     top: 0;
@@ -2796,9 +2869,7 @@ html[data-theme="dark"] .section-decor-two{
     font-size: 18px;
   }
 
-  .trust-section {
-    padding-bottom: 46px;
-  }
+
   .task-menu {
     width: 100%;
   }
